@@ -9,6 +9,7 @@
   <title>Agenda C1b3rwall 2026</title>
   <style>
     :root {
+      --px: clamp(12px, 2.5vw, 56px);
       color-scheme: light;
       --bg: #f5f7fb;
       --panel: #ffffff;
@@ -68,17 +69,15 @@
     }
 
     .app {
-      max-width: 1120px;
-      margin: 0 auto;
-      padding: 16px 14px 88px;
+      padding: 16px var(--px) 88px;
     }
 
     .topbar {
       position: sticky;
       top: 0;
       z-index: 60;
-      margin: -16px -14px 14px;
-      padding: calc(12px + env(safe-area-inset-top)) 14px 12px;
+      margin: -16px calc(-1 * var(--px)) 14px;
+      padding: calc(12px + env(safe-area-inset-top)) var(--px) 12px;
       background: rgba(245, 247, 251, .92);
       border-bottom: 1px solid rgba(217, 226, 236, .84);
       backdrop-filter: blur(14px);
@@ -851,15 +850,6 @@
     }
 
     @media (max-width: 720px) {
-      .app {
-        padding-inline: 10px;
-      }
-
-      .topbar {
-        margin-inline: -10px;
-        padding-inline: 10px;
-      }
-
       .brand {
         align-items: flex-start;
       }
