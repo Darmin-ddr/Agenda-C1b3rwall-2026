@@ -114,13 +114,14 @@ def json_to_ics(sessions):
         if s.get("Consejos"):
             desc_parts.append(f"Consejos: {s['Consejos']}")
 
+        desc_text = "\n\n".join(desc_parts)
         lines += [
             "BEGIN:VEVENT",
             f"UID:ciberwall2026-{i+1:03d}",
             f"DTSTART:{dtstart}",
             f"DTEND:{dtend}",
             f"SUMMARY:{esc(titulo)}",
-            f"DESCRIPTION:{esc(chr(10).join(desc_parts))}",
+            f"DESCRIPTION:{esc(desc_text)}",
             f"LOCATION:{esc(s.get('Ubicación', ''))}",
             f"CATEGORIES:{esc(s.get('Actividad', ''))}",
             "END:VEVENT",
