@@ -208,14 +208,15 @@
       margin: 0 0 12px;
       padding: 4px;
       border-radius: 8px;
-      background: rgba(213, 225, 238, .96);
+      background: rgba(255, 255, 255, .97);
       border: 1px solid var(--line);
       box-shadow: 0 8px 22px rgba(16, 24, 32, .1);
       backdrop-filter: blur(12px);
     }
 
     :root[data-theme="dark"] .tabs {
-      background: rgba(16, 25, 35, .96);
+      background: rgba(26, 40, 57, .97);
+      border-color: rgba(57, 167, 220, .18);
     }
 
     .tab {
@@ -450,19 +451,17 @@
     }
 
     .stats {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
       margin: 0 0 12px;
     }
 
     .stat {
-      padding: 7px 10px;
+      display: inline-block;
+      padding: 5px 10px;
       border: 1px solid var(--line);
       border-radius: 999px;
       background: rgba(255, 255, 255, .72);
       color: var(--muted);
-      font-size: .82rem;
+      font-size: .80rem;
       font-weight: 700;
     }
 
@@ -994,7 +993,13 @@
         bottom: max(10px, env(safe-area-inset-bottom));
         z-index: 80;
         margin: 0;
-        box-shadow: 0 12px 28px rgba(16, 24, 32, .28);
+        border-top: 2px solid rgba(0, 90, 141, .22);
+        box-shadow: 0 -6px 24px rgba(16, 24, 32, .18), 0 4px 12px rgba(16, 24, 32, .1);
+      }
+
+      :root[data-theme="dark"] .tabs {
+        border-top-color: rgba(57, 167, 220, .3);
+        box-shadow: 0 -6px 28px rgba(0, 0, 0, .45), 0 4px 12px rgba(0, 0, 0, .2);
       }
 
       .slot-title {
@@ -1706,11 +1711,7 @@
     function updateStats(events) {
       const selectedVisible = events.filter(event => state.selected.has(event.uid)).length;
       els.sourceLabel.textContent = state.sourceLabel;
-      els.stats.innerHTML = `
-        <span class="stat">${events.length} sesiones visibles</span>
-        <span class="stat">${unique(events.map(event => event.room)).length} aulas</span>
-        <span class="stat">${selectedVisible} en mi agenda aquí</span>
-      `;
+      els.stats.innerHTML = `<span class="stat">${events.length} sesiones · ${unique(events.map(event => event.room)).length} aulas · ${selectedVisible} en agenda</span>`;
     }
 
     function updateAgendaCount() {
