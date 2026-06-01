@@ -199,17 +199,23 @@
     }
 
     .tabs {
+      position: sticky;
+      top: calc(92px + env(safe-area-inset-top));
+      z-index: 45;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 6px;
-      margin: 12px 0;
+      margin: 0 0 12px;
       padding: 4px;
       border-radius: 8px;
-      background: #e3ebf3;
+      background: rgba(213, 225, 238, .96);
+      border: 1px solid var(--line);
+      box-shadow: 0 8px 22px rgba(16, 24, 32, .1);
+      backdrop-filter: blur(12px);
     }
 
     :root[data-theme="dark"] .tabs {
-      background: #101923;
+      background: rgba(16, 25, 35, .96);
     }
 
     .tab {
@@ -223,8 +229,8 @@
     }
 
     .tab.active {
-      background: var(--panel);
-      color: var(--brand-2);
+      background: var(--brand);
+      color: #fff;
       box-shadow: 0 6px 16px rgba(16, 24, 32, .08);
     }
 
@@ -944,6 +950,14 @@
         align-items: flex-start;
       }
 
+      .subtitle {
+        white-space: normal;
+        overflow: visible;
+        text-overflow: clip;
+        font-size: .78rem;
+        line-height: 1.25;
+      }
+
       .summary-pill {
         display: none;
       }
@@ -969,13 +983,13 @@
       }
 
       .tabs {
-        position: fixed;
+        position: sticky;
+        top: calc(118px + env(safe-area-inset-top));
         left: 10px;
         right: 10px;
-        bottom: max(10px, env(safe-area-inset-bottom));
-        z-index: 30;
-        margin: 0;
-        box-shadow: 0 12px 28px rgba(16, 24, 32, .24);
+        z-index: 45;
+        margin: 0 0 10px;
+        box-shadow: 0 8px 22px rgba(16, 24, 32, .18);
       }
 
       .slot-title {
