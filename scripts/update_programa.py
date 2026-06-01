@@ -130,11 +130,12 @@ def json_to_ics(sessions):
     return "\r\n".join(lines)
 
 
-def embed_ics(html, ics):
+def embed_ics(html, ics, timestamp):
     b64 = base64.b64encode(ics.encode("utf-8")).decode("ascii")
+    # Update base64 content and data-updated attribute
     new_html, n = re.subn(
-        r'(<script[^>]+id="embeddedIcs"[^>]*>).*?(</script>)',
-        rf'\g<1>{b64}\2',
+        r'<script([^>]+)id="embeddedIcs"([^>]*)>.*?(</script>)',
+        lambda m: f'<script{m.group(1)}id="embeddedIcs"{m.group(2)} data-updated="{timestamp}">{b64}{m.group(3)}',
         html,
         flags=re.DOTALL,
     )
@@ -177,7 +178,7 @@ def main():
     print(f"Eventos ICS generados: {valid}")
 
     html = HTML_FILE.read_text(encoding="utf-8")
-    new_html, ok = embed_ics(html, ics)
+    new_html, ok = embed_ics(html, ics, timestamp)
 
     if not ok:
         print("Error: no se encontró el tag #embeddedIcs en index.html")
