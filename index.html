@@ -915,6 +915,7 @@
         max-height: calc(100vh - 250px);
       }
     }
+
   </style>
 </head>
 <body>
@@ -1297,8 +1298,13 @@
 
       els.content.innerHTML = `
         <div class="actions">
-          <button class="action" type="button" id="exportAgenda">Exportar mi agenda ICS</button>
+          <button class="action" type="button" id="exportAgenda">+ 📅 Añadir al calendario</button>
           <button class="action secondary" type="button" id="clearAgenda">Vaciar agenda</button>
+          <span id="clearConfirm" hidden>
+            ¿Borrar todo?
+            <button class="action secondary" type="button" id="clearCancel">Cancelar</button>
+            <button class="action danger" type="button" id="clearOk">Vaciar</button>
+          </span>
         </div>
         ${renderAgendaWarnings(selected)}
         ${groupBySlot(selected).map(([slot, items]) => `
@@ -1308,7 +1314,17 @@
           </section>
         `).join("")}`;
       document.querySelector("#exportAgenda").addEventListener("click", () => downloadIcs(selected, "mi-agenda-ciberwall-2026.ics"));
-      document.querySelector("#clearAgenda").addEventListener("click", () => {
+      const clearBtn = document.querySelector("#clearAgenda");
+      const clearConfirm = document.querySelector("#clearConfirm");
+      clearBtn.addEventListener("click", () => {
+        clearBtn.hidden = true;
+        clearConfirm.hidden = false;
+      });
+      document.querySelector("#clearCancel").addEventListener("click", () => {
+        clearConfirm.hidden = true;
+        clearBtn.hidden = false;
+      });
+      document.querySelector("#clearOk").addEventListener("click", () => {
         state.selected.clear();
         saveAgenda();
         render();
@@ -1338,13 +1354,16 @@
     function renderNow() {
       const now = new Date();
       const current = state.events.filter(event => event.start <= now && event.end >= now);
-      const next = state.events.filter(event => event.start > now).slice(0, 12);
+      const upcoming = state.events.filter(event => event.start > now).sort((a, b) => a.start - b.start);
+      const nextStart = upcoming[0]?.start;
+      const next = nextStart
+        ? upcoming
+            .filter(event => event.start - nextStart <= 60 * 60 * 1000)
+            .sort((a, b) => (state.selected.has(b.uid) ? 1 : 0) - (state.selected.has(a.uid) ? 1 : 0) || a.start - b.start)
+        : [];
 
       els.content.innerHTML = `
         <section class="now-panel">
-          <div class="notice">
-            Hora usada: ${escapeHtml(new Intl.DateTimeFormat("es-ES", { dateStyle: "full", timeStyle: "short", timeZone: TZ }).format(now))}
-          </div>
           <div>
             <div class="slot-title"><span>En curso</span><span>${current.length}</span></div>
             <div class="cards">${current.length ? current.map(renderCard).join("") : `<div class="empty">No hay sesiones en curso ahora mismo.</div>`}</div>
@@ -1436,7 +1455,7 @@
           <div class="actions">
             <button class="action ${selected ? "danger" : ""}" type="button" data-toggle="${escapeAttr(event.uid)}">${selected ? "Quitar" : "Añadir"}</button>
             <button class="action secondary" type="button" data-detail="${escapeAttr(event.uid)}">Detalles</button>
-            <button class="action secondary" type="button" data-download="${escapeAttr(event.uid)}">ICS</button>
+            <button class="action secondary" type="button" data-download="${escapeAttr(event.uid)}">+ 📅</button>
           </div>
         </article>`;
     }
@@ -1503,7 +1522,7 @@
         ${conflicts.length ? `<div class="notice">Conflicto con: ${escapeHtml(conflicts.map(item => item.title).join(", "))}</div>` : ""}
         <div class="actions">
           <button class="action ${selected ? "danger" : ""}" type="button" data-modal-toggle="${escapeAttr(uid)}">${selected ? "Quitar de mi agenda" : "Añadir a mi agenda"}</button>
-          <button class="action secondary" type="button" data-modal-download="${escapeAttr(uid)}">Descargar ICS</button>
+          <button class="action secondary" type="button" data-modal-download="${escapeAttr(uid)}">+ 📅</button>
         </div>`;
       els.detail.querySelector(".close").addEventListener("click", () => els.dialog.close());
       els.detail.querySelector("[data-modal-toggle]").addEventListener("click", () => {
