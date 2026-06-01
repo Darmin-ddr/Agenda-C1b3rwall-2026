@@ -1,0 +1,2641 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Congreso//EN
+BEGIN:VEVENT
+UID:evento_214@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T070000Z
+DTEND:20260602T074000Z
+SUMMARY:Arquitecturas de inteligencia avanzadas I
+DESCRIPTION:Ponentes: PN \\n\\nCuando las arquitecturas convencionales de inteligencia ya no bastan\, el reto es crear infraestructuras que no sólo ordenen información\, sino que también permitan compartir significados y criterios. 
+LOCATION:Aula 10
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_211@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T070000Z
+DTEND:20260602T074000Z
+SUMMARY:Cisco Agentic AI
+DESCRIPTION:Ponentes: Jorge Hormigos\\n\\nAbordaremos el enfoque de Cisco frente a la Agentic AI\, con especial atención a dos piezas clave en su estrategia de seguridad: Cisco AI Defense y Cisco Duo. 
+LOCATION:Aula 3
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_206@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T070000Z
+DTEND:20260602T074000Z
+SUMMARY:Cómo la microsegmentación blinda los servicios al ciudadano
+DESCRIPTION:Ponentes: Lili Lopez\\n\\nAnalizaremos como la segmentación de red permite aislar incidentes de forma quirúrjica\, evitando el movimiento lateral y garantizando los servicios al ciudadano y la protección de sus datos.
+LOCATION:Aula 9
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_277@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T070000Z
+DTEND:20260602T074000Z
+SUMMARY:Cumplimiento y garantías de seguridad en la nube pública de Amazon Web Services (AWS)
+DESCRIPTION:Ponentes: Alberto González\\n\\n¿Es la nube pública segura y resiliente para instituciones críticas para el país? Desmontamos mitos con evidencias técnicas y ejemplos de qué organismos españoles están ya utilizándolo.
+LOCATION:Aula 4
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_267@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T070000Z
+DTEND:20260602T074000Z
+SUMMARY:Dependencia tecnológica y seguridad de la información
+DESCRIPTION:Ponentes: David Ramirez\\n\\n
+LOCATION:Aula 12
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_208@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T070000Z
+DTEND:20260602T074000Z
+SUMMARY:El rastro sonoro del crimen digital
+DESCRIPTION:Ponentes: María Granados\\n\\nIntroducción a los conceptos básicos y metodología de trabajo del laboratorio de acústica forense. Se expondrán los ciberdelitos que nos afectan así como lo más actual a lo que debemos enfrentarnos.
+LOCATION:Aula 6
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_213@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T070000Z
+DTEND:20260602T074000Z
+SUMMARY:ePol Patrol 2.0 - Consultas policiales en movilidad
+DESCRIPTION:Ponentes: Jaime Guerra\, Emilio Cernadas\\n\\nPresentación de la aplicación ePol Patrol y sus novedades más recientes.
+LOCATION:Aula 11
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_212@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T070000Z
+DTEND:20260602T074000Z
+SUMMARY:Garantizando la integridad del dato en entornos de seguridad pública
+DESCRIPTION:Ponentes: Paula Garcia\, Alejandro Rebolledo\\n\\nProtección del dato como activo crítico en el sector público. Retos de ciberseguridad y resiliencia y cómo NetApp garantiza integridad\, disponibilidad y rápida recuperación ante ciberamenazas. 
+LOCATION:Aula 2
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_209@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T070000Z
+DTEND:20260602T074000Z
+SUMMARY:Gemelos digitales inteligentes: revolucionando la toma de decisiones en las fuerzas de seguridad
+DESCRIPTION:Ponentes: Diego Gonzalez\\n\\nLos gemelos digitales son la integracion de modelos 3D\, datos dinamicos y capacidades cognitivas. Su aplicacion en entornos de seguridad permite el entrenamiento asi como apoyar la toma de decisiones
+LOCATION:Aula 5
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_128@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T070000Z
+DTEND:20260602T074000Z
+SUMMARY:MiDNI
+DESCRIPTION:Ponentes: Alberto Cogolludo\, Carlos Carranza\\n\\nRegistro\, activación y uso de aplicación MiDNI
+LOCATION:Aula 8
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_207@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T070000Z
+DTEND:20260602T074000Z
+SUMMARY:Presentación sistema veriDOC
+DESCRIPTION:Ponentes: Juan Souto\\n\\nPresentación del nuevo sistema de verificación de documentos para personal policial\, diseñado para uso tanto en patrullas como en dependencias policiales.
+LOCATION:Aula 7
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_215@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T070000Z
+DTEND:20260602T074000Z
+SUMMARY:Threat Response Chatbot: un asistente virtual para la gestión de incidentes
+DESCRIPTION:Ponentes: Álvaro Bustos\\n\\nChatbot desarrollado con OpenWebUI que permite optimizar la gestión de los incidentes de seguridad a través del lenguaje natural. Al ejecutarse en entornos locales\, ofrece altos niveles de privacidad.
+LOCATION:Aula 1
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_153@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T074500Z
+DTEND:20260602T082000Z
+SUMMARY:Supply chain attacks 3.0: técnicas y desafíos en detección y respuesta
+DESCRIPTION:Ponentes: David Herrero\, Natalia López\\n\\nLos ataques a la cadena de suministro no se limitan únicamente a bibliotecas o paquetes de terceros comprometidos con código malicioso. En muchos casos el vector de entrada es el robo de identidad.
+LOCATION:Sala de Congresos
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_179@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T075500Z
+DTEND:20260602T083500Z
+SUMMARY:Acceso remoto y teletrabajo seguro: fundamentos de ciberseguridad y concienciación
+DESCRIPTION:Ponentes: Elena Rodríguez\\n\\nLa concienciación del usuario junto con tecnologías de acceso seguro y arquitecturas Zero Trust como ZTNA\, permiten reducir riesgos y proteger el entorno digital  de las organizaciones.
+LOCATION:Aula 2
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_173@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T075500Z
+DTEND:20260602T083500Z
+SUMMARY:AI Act: prácticas prohibidas y casos de nivel alto de riesgo aplicables a FCSE
+DESCRIPTION:Ponentes: Luis Ariza\\n\\nPrácticas prohibidas de IA y nivel alto de riesgo aplicables principalmente a las FCSE: perspectiva legal y práctica. Vasos comunicantes de esta materia con RGPD y sistemas de compliance (RPPJ)
+LOCATION:Aula 8
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_258@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T075500Z
+DTEND:20260602T083500Z
+SUMMARY:AI Unlocked: Decoding Prompt Injection
+DESCRIPTION:Ponentes: Javier López\, Aitor Miguelez\, Aitor Miguelez\\n\\nAI Unlocked: Decoding Prompt Injection es un desafío interactivo y práctico de seguridad de IA que ayuda a comprender cómo funciona la inyección de mensajes en sistemas de IA reales.
+LOCATION:Aula 9
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_181@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T075500Z
+DTEND:20260602T083500Z
+SUMMARY:Arquitecturas de inteligencia avanzadas II
+DESCRIPTION:Ponentes: PN \\n\\nCuando las arquitecturas convencionales de inteligencia ya no bastan\, el reto es crear infraestructuras que no sólo ordenen información\, sino que también permitan compartir significados y criterios.
+LOCATION:Aula 10
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_178@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T075500Z
+DTEND:20260602T083500Z
+SUMMARY:BRA!N: clasificar el "error humano" como vector de ataque
+DESCRIPTION:Ponentes: Marcos Sánchez\\n\\nLos ataques modernos no solo explotan sistemas\, también atajos mentales. BRA!N nace como framework para descomponer lo que llamamos "error humano" en componentes observables y mitigables.
+LOCATION:Aula 3
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_180@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T075500Z
+DTEND:20260602T083500Z
+SUMMARY:CIBER-KKO Ingeniería Social y Seguridad Ofensiva
+DESCRIPTION:Ponentes: José Antonio Cintora\\n\\nPonencia centrada en el hackeo humano\, la Ingeniería Social y la Seguridad Ofensiva. No se trata de conocer el cómo\, sino el porqué somos tan vulnerables en el uso de la TIC´s y los malos lo saben.
+LOCATION:Aula 11
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_171@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T075500Z
+DTEND:20260602T083500Z
+SUMMARY:CTF: Operación PARANZE
+DESCRIPTION:Ponentes: Nieves Gómez\, Nieves Gómez\, Andrea Hidalgo\\n\\nCTF utiliza en tu investigación las herramientas de Europol Platform for Experts (EPE) y descubre la identidad del sospechoso.
+LOCATION:Aula DOTD
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_170@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T075500Z
+DTEND:20260602T083500Z
+SUMMARY:Herramientas utilizadas en la investigación de delitos de explotación sexual infantil
+DESCRIPTION:Ponentes: Emilio José Real\\n\\nLa ponencia muestra las funcionalidades de las distintas herramientas informáticas utilizadas por la UCC en la investigación de los delitos de abuso en entornos digitales
+LOCATION:Aula UCC 1 
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_176@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T075500Z
+DTEND:20260602T083500Z
+SUMMARY:La ruta del dinero del cibercrimen. El laberinto sin fin
+DESCRIPTION:Ponentes: Juan Carlos Galindo\\n\\nEl dinero distraído obtenido a través de ciberestafas no desaparece. Viaja.Con un click cruza fronteras\, cambia de manos y se disfraza. Sabes como lo hacen? y Cómo se les atrapa?Te espero
+LOCATION:Aula 5
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_174@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T075500Z
+DTEND:20260602T083500Z
+SUMMARY:Más vale bug reportado que breach anunciado
+DESCRIPTION:Ponentes: David Padilla\\n\\nEsta ponencia abordará el estado actual de la ciberseguridad en España a través de casos reales de vulnerabilidades reportadas a empresas de alcance internacional mediante programas de Bug Bounty. 
+LOCATION:Aula 7
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_169@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T075500Z
+DTEND:20260602T083500Z
+SUMMARY:Producción de imágenes de explotación sexual infantil
+DESCRIPTION:Ponentes: Eduardo Casas\\n\\nSe realizará un estudio de las características de los que producen explotación sexual infantil\, diferenciando realidades de mitos.
+LOCATION:Aula UCC 2
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_182@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T075500Z
+DTEND:20260602T083500Z
+SUMMARY:Seguridad en la custodia de criptoactivos incautados
+DESCRIPTION:Ponentes: Pepe Fernández\\n\\nLa presentación aborda la necesidad de proteger los activos incautados\, desde el momento de la operación hasta la resolución judicial.
+LOCATION:Aula 1
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_278@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T075500Z
+DTEND:20260602T085500Z
+SUMMARY:Taller de la nueva intranet webPol
+DESCRIPTION:Ponentes: Policía Nacional\\n\\n
+LOCATION:Aulas 3 y 4 de Informática
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_175@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T075500Z
+DTEND:20260602T083500Z
+SUMMARY:Tecnología 3D ¿Puerta abierta a la fabricación doméstica de armas?
+DESCRIPTION:Ponentes: Salvador Martinez\\n\\nEstado actual del mercado 3D\, tecnologías\, materiales y aplicaciones. Se analizarán diferencias entre impresoras\, usos domésticos\, riesgos y límites de fabricación.
+LOCATION:Aula 6
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_177@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T075500Z
+DTEND:20260602T083500Z
+SUMMARY:Tu firma me suena
+DESCRIPTION:Ponentes: David Soto\\n\\nAplicacion del Hash Perceptual en la deteccion de firmas. Explicacion de aplicacion en casos periciales reales. 
+LOCATION:Aula 4
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_172@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T075500Z
+DTEND:20260602T083500Z
+SUMMARY:Una raspberry no está hecha para la IA\, lo bueno es que la raspberry no lo sabe
+DESCRIPTION:Ponentes: Carlos España\\n\\nEn este taller explicaremos como desplegar una IA local autónoma en una Raspberry Pi 5 utilizando un pequeño LLM\, ademas de un sistema chat local sin dependencia de internet.
+LOCATION:Aula 12
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_247@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T080000Z
+DTEND:20260602T100000Z
+SUMMARY:Defensa personal policial
+DESCRIPTION:Ponentes: Oscar Gangoso\\n\\nTécnicas básicas de Defensa Personal
+LOCATION:TALLER DE AUTOPROTECCIÓN
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_151@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T083000Z
+DTEND:20260602T090500Z
+SUMMARY:Diseño de infraestructuras TIC con propósito. Primer paso hacia la ciberresilencia
+DESCRIPTION:Ponentes: Víctor Jiménez\\n\\nEstablecer una visión de conjunto y objetivos claros\, como primera fortaleza de los sistemas y servicios de comunicación como estrategia de ciberresilencia y continuidad de negocio.
+LOCATION:Sala de Congresos
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_152@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T083000Z
+DTEND:20260602T090500Z
+SUMMARY:Liderazgo de la seguridad corporativa en crisis reales
+DESCRIPTION:Ponentes: José Antonio Vázquez\\n\\nVisión del CSO ante crisis reales: cómo decidir bajo presión\, coordinar áreas críticas y dar respuesta ejecutiva cuando la resiliencia\, la reputación y el negocio están en juego.
+LOCATION:Auditorio
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_259@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T085000Z
+DTEND:20260602T093000Z
+SUMMARY:AI Unlocked: Decoding Prompt Injection
+DESCRIPTION:Ponentes: Javier Gavilán\, Aitor Miguelez\, Aitor Miguelez\\n\\nAI Unlocked: Decoding Prompt Injection es un desafío interactivo y práctico de seguridad de IA que ayuda a comprender cómo funciona la inyección de mensajes en sistemas de IA reales.
+LOCATION:Aula 9
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_133@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T085000Z
+DTEND:20260602T093000Z
+SUMMARY:Como reforzar la ciberseguridad en 60 administraciones públicas: 120 días de actuaciones intensivas
+DESCRIPTION:Ponentes: Carles Giné\\n\\nLecciones aprendidas: que funciona realmente y qué no al desplegar pentest\, formación y simulacros de ciberincidentes a gran escala en administraciones públicas de diferentes tamaños en poco tiempo.
+LOCATION:Aula 4
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_127@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T085000Z
+DTEND:20260602T093000Z
+SUMMARY:CTF: Operación PARANZE
+DESCRIPTION:Ponentes: Andrea Hidalgo\, Nieves Gómez\, Andrea Hidalgo\\n\\nUtilización de las herramientas de Europol Plathform for Experts (EPE) a fin de descubrir la identidad del sospechoso. 
+LOCATION:Aula DOTD
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_136@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T085000Z
+DTEND:20260602T093000Z
+SUMMARY:Del Zero Trust al Zero Seconds: agentes autónomos\, Vibe Coding y la explotación por IA
+DESCRIPTION:Ponentes: Rocio Benavente\\n\\nDel Zero Trust al Zero Seconds: analizaremos la IA como riesgo interno\, Vibe Coding y agentes autónomos\, frente a la amenaza externa como Mythos capaces de generar exploits y atacar en milisegundos.
+LOCATION:Aula 12
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_135@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T085000Z
+DTEND:20260602T093000Z
+SUMMARY:El efecto Korea del Norte\, cibercrimen.
+DESCRIPTION:Ponentes: David Navarro\\n\\nEl poder de un Estado-Nación \, teóricamente sometido a bloqueos y embargos\, encuentra en el Cibercrimen y diversificación de delitos\, la principal forma de financiación y mantenimiento del régimen NK
+LOCATION:Aula 2
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_134@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T085000Z
+DTEND:20260602T093000Z
+SUMMARY:El informe forense y la defensa en sede judicial
+DESCRIPTION:Ponentes: Fernando Mairata\\n\\nElaboración de informes de pericia tecnológica y cómo ratificar en sede judicial para que las evidencias se acepten como prueba
+LOCATION:Aula 3
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_137@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T085000Z
+DTEND:20260602T093000Z
+SUMMARY:Estrategias cuánticas para la Policía Nacional (perspectiva estratégica)
+DESCRIPTION:Ponentes: Javier Parra\\n\\nSe expondrá como la Teoría de Juegos Cuántica (QGT) y la computación cuántica pueden ayudar a la Policía en la mejora de toma de decisiones y resolución de conflictos.
+LOCATION:Aula 11
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_138@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T085000Z
+DTEND:20260602T093000Z
+SUMMARY:Europol y su rol como centro europeo de inteligencia criminal
+DESCRIPTION:Ponentes: Alvaro Azofra\\n\\nLa ponencia se basará en el rol de Europol como agencia europea para la cooperation policial y en su labor de recepción de información y elaboración de inteligencia criminal para los EEMM de la UE.
+LOCATION:Aula 10
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_139@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T085000Z
+DTEND:20260602T093000Z
+SUMMARY:FIMI: la desinformación al servicio de los Estados
+DESCRIPTION:Ponentes: Álvaro Castro\\n\\nIntroducción al concepto de Foreign Information Manipulation and Interference y su papel dentro de las estrategias híbridas impulsadas o apoyadas por actores estatales.
+LOCATION:Aula 1
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_125@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T085000Z
+DTEND:20260602T093000Z
+SUMMARY:Investigación en redes sociales. Prevención y represión en las diferfentes conductas delictivas
+DESCRIPTION:Ponentes: Virginia García\\n\\nIntroducción a la investigación a traves de redes sociales y fuentes abiertas. Exposición de las diferentes tipologías delictivas que se investigan con sus peculiaridades de investigación.
+LOCATION:Aula UCC 2
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_126@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T085000Z
+DTEND:20260602T093000Z
+SUMMARY:La comunicación encriptada como herramienta clave en la evolución del crimen organizado
+DESCRIPTION:Ponentes: Helena Cabezas\, Débora Jurdao\, Alba Cosmen\\n\\nSe abordará el fenómeno de las comunicaciones encriptadas como medio facilitador de la delincuencia organizada\, exponiendo a continuación cómo la Policía Nacional afronta este desafío. 
+LOCATION:Aula UCC 1
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_291@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T085000Z
+DTEND:20260602T093000Z
+SUMMARY:La dependencia tecnológica en la defensa y la seguridad
+DESCRIPTION:Ponentes: David Ramírez\\n\\nLa dependencia de tecnología extranjera supone un riesgo para la seguridad ante la dificultad de auditar plenamente sistemas tan complejos como los actuales.
+LOCATION:Aula 13
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_132@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T085000Z
+DTEND:20260602T093000Z
+SUMMARY:La última ventaja humana: el día que dejamos de ser el plan A
+DESCRIPTION:Ponentes: Alberto Gago\\n\\nCierre de La Trilogía de la IA: Vol 1 2024: ASOMBRO - ¿Qué está pasando? Vol. 2 2025: PODER ¿Quién lo está haciendo? Vol. 3 2026: CONSECUENCIA - ¿Y ahora qué pasa con nosotros?
+LOCATION:Aula 5
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_131@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T085000Z
+DTEND:20260602T093000Z
+SUMMARY:Security Deep Dive Booth
+DESCRIPTION:Ponentes: Iñigo Elorrieta\, Federico Ciulla\\n\\nLa exposición será sobre la visión de la empresa Salesforce\, relativa a la confianza en la nube y en la era de los agentes autónomos. La IA autónoma solo es útil\, si s segura.
+LOCATION:Aula 6
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_279@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T085000Z
+DTEND:20260602T095000Z
+SUMMARY:Taller de ePolPatrol 2.0
+DESCRIPTION:Ponentes: Policía Nacional\\n\\n
+LOCATION:Aulas 3 y 4 de Informática
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_130@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T085000Z
+DTEND:20260602T093000Z
+SUMMARY:Triaje forense de video asistido con IA
+DESCRIPTION:Ponentes: Juan José Delgado\\n\\nEl triaje forense de vídeo es uno de los aspectos que consumen más tiempo y recursos. En los últimos años la IA ha venido a ayudar en este campo pero aun se presenstan múltiples retos.
+LOCATION:Aula 7
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_112@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T090000Z
+DTEND:20260602T100000Z
+SUMMARY:Seguridad en LLMs: la nueva superficie criminal
+DESCRIPTION:Ponentes: José Antonio Cordón\, Pablo Morales\, Pablo Morales\\n\\nTaller sobre uso delictivo de la IA: cómo los delincuentes explotan LLMs y agentes para fraude\, ingeniería social y ciberataques\, con ejemplos reales.
+LOCATION:Laboratorio Forense
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_110@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T091500Z
+DTEND:20260602T095000Z
+SUMMARY:Modelando el futuro en tiempo de ejecución
+DESCRIPTION:Ponentes: Juan Manuel Corchado\\n\\nSe hablará sobre la IA generativa y los RAGs\, como mecanismos para impulsar una IA fiable y se analizará como las nuevas redes líquidas nos pueden ayudar a generar soluciones en entornos dinámicos. 
+LOCATION:Auditorio
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_87@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T094500Z
+DTEND:20260602T104000Z
+SUMMARY:Atención a anuncios de voluntad suicida publicados en Internet
+DESCRIPTION:Ponentes: Oscar Amor\\n\\nCómo afrontar la actuación policial ante una persona que publica en Internet su voluntad de quitarse la vida. Auxilio humanitario urgente no terapéutico.
+LOCATION:Aula UCC 2
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_242@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T094500Z
+DTEND:20260602T104000Z
+SUMMARY:Ciberseguridad en la Era Cuántica (perspectiva técnica)
+DESCRIPTION:Ponentes: Guillermo Rivas\\n\\nEsta sesión aborda cómo la computación cuántica ha pasado de ser una teoría a una amenaza tangible así como las estrategias para enfrentarte a dicha amenaza\, incluyendo PQC o QKD. 
+LOCATION:Aula 13
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_93@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T094500Z
+DTEND:20260602T104000Z
+SUMMARY:Criptoestafas fantásticas y dónde encontrarlas
+DESCRIPTION:Ponentes: Andrés David Naranja\\n\\nAPRENDEREMOS LOS MÉTODOS MÁS HABITUALES Y SUS FUNDAMÉNTOS TÉCNICOS SOBRE LAS CIBERESTAFAS CRYPTO MÁS COMUNES
+LOCATION:Aula 3
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_95@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T094500Z
+DTEND:20260602T104000Z
+SUMMARY:De los logs al autor: investigación de ciberdelincuencia asistida por IA en infraestructuras crítica
+DESCRIPTION:Ponentes: Raúl Renales\\n\\nLa ponencia expone cómo la inteligencia artificial está transformando la investigación de la ciberdelincuencia: correlación avanzada de evidencias digitales\, priorización de indicios y apoyo al analis
+LOCATION:Aula 12
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_249@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T094500Z
+DTEND:20260602T104000Z
+SUMMARY:Del dispositivo a la verdad: el trabajo de un laboratorio forense digital
+DESCRIPTION:Ponentes: Gonzalo Moratalla\\n\\nDesarrollo diaria del trabajo de un laboratorio de informática forense
+LOCATION:Aula 6
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_89@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T094500Z
+DTEND:20260602T104000Z
+SUMMARY:DFIR ANON_CASES_4: Ransomware
+DESCRIPTION:Ponentes: Antonio Sanz\\n\\nLa ponencia será el análisis técnico de la respuesta ante incidentes de un caso de ransomware\, en la que se explicará el desarrollo del incidente. 
+LOCATION:Aula 8
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_20@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T094500Z
+DTEND:20260602T104000Z
+SUMMARY:Evolución del fraude en cajeros automáticos
+DESCRIPTION:Ponentes: Oscar Morales\, Juan Pablo Berbeira\, Juan Pablo Berbeira\, Oscar Morales\, Oscar Morales\\n\\nEvolución del fraude en cajeros automáticos\, línea temporal\, ejemplos prácticos\, instrumental y cajero físico dentro del aula.
+LOCATION:Aula C
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_96@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T094500Z
+DTEND:20260602T104000Z
+SUMMARY:Familia XFix: cuando la Ingeniería Social y la Blockchain se sientan a la mesa
+DESCRIPTION:Ponentes: Javier Herrera\\n\\nVeremos como la familia XFix (principalmente su variante ClickFix) hace uso de la ingeniería social y abusa de la Blockchain (técnica Etherhiding) en una campaña llevada a cabo por actores amenaza.
+LOCATION:Aula 11
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_268@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T094500Z
+DTEND:20260602T104000Z
+SUMMARY:La comunicación encriptada como herramienta clave en la evolución del crimen organizado
+DESCRIPTION:Ponentes: Cristobal Aragón\, Débora Jurdao\, Alba Cosmen\\n\\n
+LOCATION:Aula UCC 1
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_94@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T094500Z
+DTEND:20260602T104000Z
+SUMMARY:La era de la ciberseguridad fotónica global (Postquantum)
+DESCRIPTION:Ponentes: Javier Sánchez\\n\\nEspaña pionera en criptografía postcuántica y tecnologías fotónicas avanzadas\; Comunicaciones ultra seguras frente a amenazas computacionales cuánticas y cooperación global.
+LOCATION:Aula 2
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_97@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T094500Z
+DTEND:20260602T104000Z
+SUMMARY:No mires hacia arriba (Don't look up!)
+DESCRIPTION:Ponentes: Emilio Rico\\n\\nCada vez es más frecuente ver operaciones de desinformación e influencia. DISARM (Disinformation Analysis & Risk Management) se creó para identificar\, describir\, analizar y mitigar estas campañas.
+LOCATION:Aula 10
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_168@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T094500Z
+DTEND:20260602T104000Z
+SUMMARY:Nueva webPol
+DESCRIPTION:Ponentes: Aarón Carmona\\n\\nPresentación de la nueva intranet webPol con su sistema de comunicación integrado\, escalado de noticias\, visibilidad de la información. Reserva de recursos integrada dentro de la intranet.
+LOCATION:Aula 7
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_91@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T094500Z
+DTEND:20260602T104000Z
+SUMMARY:Primeros auxilios digitales
+DESCRIPTION:Ponentes: Manuel Santos\\n\\nEn los primeros minutos de un ciber-incidente\, ¿sabrías que hacer? Pues si no\, en este taller veremos las principales amenazas a las que un negocio se va a enfrentar y como enfrentarnos a ellas.
+LOCATION:Aula 5
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_68@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T094500Z
+DTEND:20260602T104000Z
+SUMMARY:Radicalización on line y procesos de captación digital
+DESCRIPTION:Ponentes: Iñigo Mairata\\n\\nAnaliza cómo los grupos extremistas usan algoritmos\, redes sociales y psicología para aislar y captar a individuos vulnerables. El enfoque central es la transición del adoctrinamiento digital.
+LOCATION:Aula 4
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_88@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T094500Z
+DTEND:20260602T104000Z
+SUMMARY:SmartHC and Anyrun: análisis de Ransomware en entorno Sandbox\, técnicas\, comportamientos e IOCs
+DESCRIPTION:Ponentes: Ovanes Mikhaylov\\n\\nSmartHC and Anyrun: Análisis de Ransomware en entorno Sandbox. técnicas\, comportamientos e IOCs
+LOCATION:Aula 9
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_280@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T094500Z
+DTEND:20260602T104500Z
+SUMMARY:Taller de Verificación Operativa Automática de documentos (veriDoc) 
+DESCRIPTION:Ponentes: Policía Nacional\\n\\n
+LOCATION:Aulas 3 y 4 de Informática
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_98@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T094500Z
+DTEND:20260602T104000Z
+SUMMARY:Wazuh 5.0 y ENS: monitorización continua del cumplimiento normativo
+DESCRIPTION:Ponentes: Raúl García\\n\\nWazuh 5.0 puede convertir los sistemas los sistemas de la información en una fuente continua de evidencias técnicas para apoyar la auditoría y el cumplimiento normativo del RD 311/20222 en tiempo real
+LOCATION:Aula 1
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_226@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T095500Z
+DTEND:20260602T105500Z
+SUMMARY:Mesa Redonda "El negocio del crimen digital: la cara económica de la ciberdelincuencia"
+DESCRIPTION:Ponentes: Marta del Pozo\, Eloy Velasco\, Francisco Pérez\, Carlos Delgado\\n\\nMesa redonda
+LOCATION:Auditorio
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_73@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T105500Z
+DTEND:20260602T113500Z
+SUMMARY:Análisis forense bancario: de los datos masivos a la estructura criminal
+DESCRIPTION:Ponentes: Alfonso Fiestas\, Javier Guadaño\\n\\nPresentación de aplicación para el análisis de grandes cantidades de datos de cuentas bancarias para el análisis del blanqueo de capitales en investigaciones policiales de Organizaciones Criminales
+LOCATION:Aula 10
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_256@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T105500Z
+DTEND:20260602T113500Z
+SUMMARY:Ciberseguridad y licitaciones públicas. ¿Aliados o adversarios?
+DESCRIPTION:Ponentes: Ángela García\\n\\n
+LOCATION:Aula 13
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_63@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T105500Z
+DTEND:20260602T113500Z
+SUMMARY:Correos fraudulentos bajo la lupa de la IA
+DESCRIPTION:Ponentes: Francisco Jáñez\\n\\nAplicación de modelos de inteligencia artificial para detectar correos spam peligrosos con contenido de phishing\, spoofing\, extorsiones u otros fraudes digitales.
+LOCATION:Aula 9
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_92@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T105500Z
+DTEND:20260602T113500Z
+SUMMARY:Criptomonedas y delito de blanqueo de capitales
+DESCRIPTION:Ponentes: Daniel González\\n\\nEn esta ponencia se analizarán las principales dificultades prácticas que comporta la investigación judicial de los criptoactivos\, así como su ámbito de confluencia con el delito de blanqueo de dinero
+LOCATION:Aula 4
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_71@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T105500Z
+DTEND:20260602T113500Z
+SUMMARY:CUAS\, contramedidas frente a UAVs hostiles
+DESCRIPTION:Ponentes: Miriam Martínez\\n\\nSe aborda los sistemas CUAS centrados en la detección\, identificación y respuesta frente a drones no autorizados o potencialmente hostiles. Se analizan amenazas y marco legal
+LOCATION:Aula 12
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_67@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T105500Z
+DTEND:20260602T113500Z
+SUMMARY:El coste de la violencia
+DESCRIPTION:Ponentes: Jorge Francés\\n\\nLa tecnología transforma la Policía. Pero el agente sigue deteniendo personas cara a cara. Evidencia y costes reales para tomar mejores decisiones en el momento que mas importa.
+LOCATION:Aula 5
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_65@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T105500Z
+DTEND:20260602T113500Z
+SUMMARY:IA frente al crimen en la Dark Web
+DESCRIPTION:Ponentes: Víctor Pablo Prado\\n\\nEn la Dark Web se concentran mercados y actividades ilegales difíciles de analizar\; se explicará cómo la IA puede usarse para clasificar automáticamente contenidos ilícitgos sin entrenenamiento previo
+LOCATION:Aula 7
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_66@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T105500Z
+DTEND:20260602T113500Z
+SUMMARY:La investigación antiterrorista en Internet
+DESCRIPTION:Ponentes: PN \\n\\nSe tratará sobre la investigación policial enfocada a las nuevas amenazas del ciberterrorismo\, técnicas de adoctrinamiento y los retos a los que debe de hacer frente la investigación policial.
+LOCATION:Aula 6
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_70@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T105500Z
+DTEND:20260602T113500Z
+SUMMARY:La Unidad de Inteligencia: pilar fundamental para las empresas 
+DESCRIPTION:Ponentes: José Manuel Prada\\n\\nSe busca sensibilizar a los asistentes sobre la necesidad de contar en sus empresas u organizaciones con esta Unidad para beneficiar el negocio y reducir riesgos .
+LOCATION:Aula 2
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_69@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T105500Z
+DTEND:20260602T113500Z
+SUMMARY:Más allá de la Ciberseguridad. Ciberinteligencia en la protección de Infraestructuras Críticas
+DESCRIPTION:Ponentes: Carlos Seisdedos\\n\\nComo la ciberiteligencia permite fortalecer la protección de infraestructuras críticas mediante la identificación de amenazas\, el análisis del entorno y el uso de la información útil para anticiparse.
+LOCATION:Aula 3
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_64@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T105500Z
+DTEND:20260602T113500Z
+SUMMARY:Memorias de un perito informático forense vol. XII+I
+DESCRIPTION:Ponentes: Lorenzo Martínez\\n\\nSe expondrá un peritaje anonimizado en el que el cliente engañó al perito en su petición\, cómo las evidencias mostraron una realidad diferente\, cómo reaccionó el cliente y lo tuvo que hacer el perito
+LOCATION:Aula 8
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_72@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T105500Z
+DTEND:20260602T113500Z
+SUMMARY:Prevención y combate contra la ciber desinformación desde el Estado de Derecho: límites y garantías 
+DESCRIPTION:Ponentes: Emilio Ferrero\\n\\nLa ciber desinformación\, amplificada por IA\, amenaza la democracia y la seguridad nacional. Se propone una regulación garantista y un concepto de seguridad ciudadana digital frente a la manipulación. 
+LOCATION:Aula 11
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_62@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T105500Z
+DTEND:20260602T113500Z
+SUMMARY:Qué hacer cuando te han cifrado hasta la papelera de reciclaje
+DESCRIPTION:Ponentes: José Antonio Toribio\\n\\nExposición relacionada con los ataques de ransomware\, el cifrado de los datos y la extorsión a las empresas. Investigación - Cooperación Internacional
+LOCATION:Aula UCC 2
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_74@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T105500Z
+DTEND:20260602T113500Z
+SUMMARY:Scorpion Cyber Range: de la teoría al campo de batalla
+DESCRIPTION:Ponentes: Félix Gómez\\n\\nSumérgete en un entorno de simulación donde la práctica es clave. Descubre cómo aplicar conocimientos técnicos y compite en un entorno gamificado enfrentándote a situaciones reales de ciberdefensa
+LOCATION:Aula 1
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_281@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T105500Z
+DTEND:20260602T115500Z
+SUMMARY:Taller de demostración del nuevo sistema de Enrolado de Detenidos - Personas PID 3.0 
+DESCRIPTION:Ponentes: Policía Nacional\\n\\n
+LOCATION:Aulas 3 y 4 de Informática
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_50@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T110500Z
+DTEND:20260602T114000Z
+SUMMARY:Patrullando el ciberespacio: la seguridad no termina en la calle
+DESCRIPTION:Ponentes: Javier Roca\\n\\n
+LOCATION:Auditorio
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_42@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T133000Z
+DTEND:20260602T141000Z
+SUMMARY:72 horas para reaccionar: claves y herramientas para responder a una brecha de datos personales
+DESCRIPTION:Ponentes: José Luis Domínguez\\n\\nAnálisis práctico del régimen jurídico y de las herramientas para la gestión responsable de brechas de datos personales\, con la finalidad de minimizar los riesgos para los derechos fundamentales
+LOCATION:Aula 10
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_43@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T133000Z
+DTEND:20260602T141000Z
+SUMMARY:Ataques cognitivos: el crimen organizado ya no roba datos\, roba decisiones
+DESCRIPTION:Ponentes: Jaime López\\n\\nLa ciberdelincuencia desplaza el ataque al dominio cognitivo. Mecanismos operativos\, casos recientes y framework práctico para investigación\, inteligencia y gestión de crisis.
+LOCATION:Aula 1
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_271@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T133000Z
+DTEND:20260602T141000Z
+SUMMARY:Call For Papers de la Universidad de Salamanca (USAL)
+DESCRIPTION:Ponentes: CFP USAL\\n\\n
+LOCATION:Aula 14
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_41@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T133000Z
+DTEND:20260602T141000Z
+SUMMARY:Ciberinvestigación estratégica para detectives
+DESCRIPTION:Ponentes: Salvador Gamero\\n\\nEsta ponencia plantea una distinción clara entre inteligencia genérica de fuentes abiertas y ciberinvestigación como disciplina especializada dentro de la investigación privada.
+LOCATION:Aula 11
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_36@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T133000Z
+DTEND:20260602T141000Z
+SUMMARY:Cuando el conflicto híbrido entra en el SOC: desinformación\, OpenCTI y DISARM
+DESCRIPTION:Ponentes: Iván Portillo\, Angel Luis Veloy\\n\\nSe mostrará cómo tratar campañas de desinformación desde un punto de vista operativo aplicando contextualización y análisis mediante OpenCTI y DISARM\, transformándolo en inteligencia acciona e.
+LOCATION:Aula 7
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_276@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T133000Z
+DTEND:20260602T141000Z
+SUMMARY:Cuestiones legales sobre el uso de herramientas de IA en la investigación policial
+DESCRIPTION:Ponentes: Eloy Velasco\\n\\n
+LOCATION:Aula 5
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_46@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T133000Z
+DTEND:20260602T140500Z
+SUMMARY:Desde la necesidad de un analista de ciberseguridad creando soluciones con IA
+DESCRIPTION:Ponentes: Richard Gil\\n\\nCon los ataques informáticos emergentes por parte de los cibercriminales \; ciberatacantes es importante tener el panorama global contando con información relevante para actuar de manera preventiva.
+LOCATION:Sala de Congresos
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_40@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T133000Z
+DTEND:20260602T141000Z
+SUMMARY:Dominio cognitivo: cuando tu mente es el campo de batalla. Análisis de un caso real
+DESCRIPTION:Ponentes: Sonia Fernández\\n\\nConcepto del Dominio Cognitivo\, Puntos Clave\, Objetivos e Impacto en nuestra sociedad. Análisis de un caso real.
+LOCATION:Aula 2
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_35@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T133000Z
+DTEND:20260602T141000Z
+SUMMARY:Evidencias digitales certificadas: Criptografía robusta\, eIDAS
+DESCRIPTION:Ponentes: Lucía Canut\, Silvia Canut\\n\\nGarantizar la cadena de custodia\, integridad\, fecha y hora del dato\, uniendo lo mejor del mundo tecnológico\, criptografía robusta y del jurídico\, reglamento eIDAS. Tecnología que genera confianza.
+LOCATION:Aula 8
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_33@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T133000Z
+DTEND:20260602T141000Z
+SUMMARY:Investigación policial sobre material de explotación sexual infantil
+DESCRIPTION:Ponentes: Javier Parra\\n\\nIntroducción a la materia que se investiga en la Sección de Protección al Menor de la Unidad Central de Ciberdelincuencia.
+LOCATION:Aula UCC 2
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_37@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T133000Z
+DTEND:20260602T141000Z
+SUMMARY:Más allá del bien y del mal: del ataque a la respuesta coordinada
+DESCRIPTION:Ponentes: Alberto Sánchez\\n\\nExplicación acerca de la gestión de ciberincidentes en la Oficina de Coordinación de Ciberseguridad del Ministerio del Interior.
+LOCATION:Aula 6
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_47@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T133000Z
+DTEND:20260602T140500Z
+SUMMARY:Mythos: la IA especializada que abre una nueva etapa en ciberseguridad
+DESCRIPTION:Ponentes: Gerardo Rodriguez\\n\\nMythos es un hito en ciberseguridad\, pero su IA es estándar. Analizaremos su funcionamiento real para demostrar que el verdadero salto radica en su arquitectura de defensa\, no en su tecnología.
+LOCATION:Auditorio
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_39@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T133000Z
+DTEND:20260602T141000Z
+SUMMARY:OSINT para el usuario de a pie. Cómo seguir una pista sin ser técnico
+DESCRIPTION:Ponentes: Thomas O\\n\\nDurante la ponencia\, se explicará como un usuario sin ser técnico puede conseguir más información de la que cree. Todo ello sabiendo dónde buscar y de manera gratuita.
+LOCATION:Aula 3
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_230@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T133000Z
+DTEND:20260602T153000Z
+SUMMARY:Taller de conducción
+DESCRIPTION:Ponentes: Juan José Ballesteros\, Tomás García\, Encabo Saez\, Tomás García\, Encabo Saez\, Tomás García\, Encabo Saez\\n\\nTécnicas de conducción y acción operativa policial con vehículos
+LOCATION:TALLER DE CONDUCCIÓN
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_255@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T133000Z
+DTEND:20260602T141000Z
+SUMMARY:The Hound: Framework automatizado para la extracción y análisis de mercados criminales
+DESCRIPTION:Ponentes: Francisco Cano\\n\\nIntroducción de la herramienta The Hound\, un framework robusto y automatizado diseñado para la extracción y procesamiento sistemático de datos de múltiples mercados ilícitos. 
+LOCATION:Aula 12
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_38@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T133000Z
+DTEND:20260602T141000Z
+SUMMARY:TOR y la Dark Web como ecosistema del cibercrimen
+DESCRIPTION:Ponentes: Álvaro Martínez\\n\\nTOR\, Dark Web\, y ransomware: una inmersión técnica y práctica en el ecosistema del cibercrimen organizado\, con navegación en directo y casos reales de la Policía Nacional.
+LOCATION:Aula 4
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_34@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T133000Z
+DTEND:20260602T141000Z
+SUMMARY:Uso de herramientas OSINT en la investigación policial
+DESCRIPTION:Ponentes: Iván Outomuro\\n\\nUtilización de herramientas en fuentes abiertas dirigidas a la investigación policial.
+LOCATION:Aula UCC 1
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_113@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T140000Z
+DTEND:20260602T150000Z
+SUMMARY:Seguridad en LLMs: la nueva superficie criminal
+DESCRIPTION:Ponentes: José Antonio Cordón\, Pablo Morales\, Pablo Morales\\n\\nTaller sobre uso delictivo de la IA: cómo los delincuentes explotan LLMs y agentes para fraude\, ingeniería social y ciberataques\, con ejemplos reales.
+LOCATION:Laboratorio Forense
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_257@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T141500Z
+DTEND:20260602T145000Z
+SUMMARY:Ciberseguridad: a qué prestar atención en 2026
+DESCRIPTION:Ponentes: Neftali Mañes\\n\\nBreve explicación de los puntos interesantes en Ciberseguridad global destacados por Recorded Future para este 2026\; con especial atención a eventos geopolíticos y de Actores globales de amenaza. 
+LOCATION:Sala de Congresos
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_18@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T141500Z
+DTEND:20260602T145000Z
+SUMMARY:Enfoque práctico de la Criptografía Post Cuántica
+DESCRIPTION:Ponentes: Alberto Martín\, Julio Prada\\n\\nAnalizaremos cómo la llegada de la computación cuántica impactará en los sistemas criptográficos actuales y qué medidas deben adoptarse para prepararse. Se explicarán los riesgos asociados.
+LOCATION:Auditorio
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_272@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T142500Z
+DTEND:20260602T150500Z
+SUMMARY:Call For Papers de la Universidad de Salamanca (USAL)
+DESCRIPTION:Ponentes: CFP USAL\\n\\n
+LOCATION:Aula 14
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_14@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T142500Z
+DTEND:20260602T150500Z
+SUMMARY:De Datos a Inteligencia Accionable
+DESCRIPTION:Ponentes: Javier Fadon\\n\\nEn un mundo donde la promesa del dinero fácil brilla mas que nunca\, la oscuridad que late detrás de los espejismos digitales la describiremos de una manera técnica para desvelar Fraudes criptomonedas 
+LOCATION:Aula 11
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_15@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T142500Z
+DTEND:20260602T150500Z
+SUMMARY:Del hurto al desbloqueo y el negocio del robo de smartphones
+DESCRIPTION:Ponentes: Martin Vigo\\n\\nMi investigación personal sobre los actores vinculados a la Operación KAERB. Cómo los rastreé\, qué infraestructura encontré y qué aprendí sobre sus técnicas de phishing\, OSINT y robo de móviles.
+LOCATION:Aula 10
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_12@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T142500Z
+DTEND:20260602T150500Z
+SUMMARY:Edad oscura digital
+DESCRIPTION:Ponentes: Ricardo Barrasa\\n\\nVivimos con la sensación de que lo digital es eterno. Guardamos documentos\, fotografía\, confiando en que\, cuando llegue el momento\, seguirán estando ahí. Pero la información digital es frágil.
+LOCATION:Aula 2
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_6@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T142500Z
+DTEND:20260602T150500Z
+SUMMARY:El espejo digital: cómo la IA nos conoce y cómo proteger nuestra identidad
+DESCRIPTION:Ponentes: Gerardo Rodriguez\\n\\nDe la huella digital al ataque preciso: descubre el impacto real de la IA en deepfakes y estafas. Una sesión práctica con pautas clave para recuperar el control de tu seguridad.
+LOCATION:Aula 9
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_13@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T142500Z
+DTEND:20260602T150500Z
+SUMMARY:El primer interviniente en la emergencia\, nuevo sistema instantáneo de gestión
+DESCRIPTION:Ponentes: Joaquín Benito\\n\\nNuevas tecnologías aplicadas a la emergencia consiguen lo más importante en su gestión\, ganar tiempo al tiempo en su identificación y resolución. FUSUS\, el nuevo software de gestión de la emergencia.
+LOCATION:Aula 12
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_21@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T142500Z
+DTEND:20260602T150500Z
+SUMMARY:Evolución del fraude en cajeros automáticos
+DESCRIPTION:Ponentes: Oscar Morales\, Juan Pablo Berbeira\, Juan Pablo Berbeira\, Oscar Morales\, Oscar Morales\\n\\n
+LOCATION:Aula C
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_9@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T142500Z
+DTEND:20260602T150500Z
+SUMMARY:Forense en entornos cifrados: estrategias y obstáculos actuales
+DESCRIPTION:Ponentes: PN \\n\\nSesión orientada a analizar el reto del cifrado en el forense digital. Se abordarán\, a alto nivel\, los sistemas de cifrado mas frecuentes y las posibles estrategias para acceder a la información.
+LOCATION:Aula 6
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_5@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T142500Z
+DTEND:20260602T150500Z
+SUMMARY:Identificación a través de fuentes abiertas
+DESCRIPTION:Ponentes: Ricardo Díaz\, Alberto Villullas\\n\\nIdentificación de perfiles utilizando técnicas OSINT
+LOCATION:Aula UCC 1
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_210@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T142500Z
+DTEND:20260602T150500Z
+SUMMARY:Infostealers: la epidemia silencia
+DESCRIPTION:Ponentes: Adolfo Sánchez\\n\\nLa ponencia tratará sobre el peligro de los infostealer\, desde la infectación hasta su explotación
+LOCATION:Aula 4
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_16@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T142500Z
+DTEND:20260602T150500Z
+SUMMARY:La IA como ciberdelincuente: cómo defender tus agentes IA
+DESCRIPTION:Ponentes: Jorge Bolinches\\n\\n2025 ha sido el año de las implementaciones agénticas en diversas organizaciones. En esta presentación\, veremos las principales vulnerabilidades de los agentes y como mitigarlas.
+LOCATION:Aula 1
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_11@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T142500Z
+DTEND:20260602T150500Z
+SUMMARY:OSINT\, peligros de la exposición en Internet
+DESCRIPTION:Ponentes: Juan Ruiz\\n\\nConceptos básicos de OSINT\, Dorks\, Egosurfing\, Data Leaks\, Filtraciones y Herramientas de Búsqueda Inversa para concienciar de la exposición que sufrimos en internet. 
+LOCATION:Aula 3
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_10@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T142500Z
+DTEND:20260602T150500Z
+SUMMARY:This is the data way
+DESCRIPTION:Ponentes: Roberto Gonzalez\\n\\nPonencia experencial que combina ciberseguridad\, forensia digital\, OSINT y cultura pop para crear una experiencia gamificada\, divertida y didáctica\, todo a traves del universo Star Wars.
+LOCATION:Aula 5
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_7@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T142500Z
+DTEND:20260602T150500Z
+SUMMARY:Unidad Aérea de Policía Nacional: medio siglo de evolución operativa
+DESCRIPTION:Ponentes: Maika Pardo\\n\\n¿Qué es la Unidad Aérea de Policía Nacional?  Un recorrido por su evolución\, capacidades y papel estratégico en las operaciones policiales.
+LOCATION:Aula 8
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_238@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T155000Z
+DTEND:20260602T162000Z
+SUMMARY:Exhibición de Geos
+DESCRIPTION:Ponentes: GEOS GEOS\\n\\n
+LOCATION:Explanada principal
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_236@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260602T163000Z
+DTEND:20260602T165000Z
+SUMMARY:Exhibición de Perros
+DESCRIPTION:Ponentes: Guías Caninos\\n\\n
+LOCATION:Explanada principal
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_202@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T070000Z
+DTEND:20260603T074000Z
+SUMMARY:¿Esto nos afecta? El fin de la pregunta que quita el sueño a tu CISO
+DESCRIPTION:Ponentes: Julio Gómez\\n\\nNo esperes a que tu manager te pregunte. Crea un sistema autónomo basado en agentes de IA que devore informes de inteligencia\, analice tu infraestructura y te notifique con la respuesta ya lista.
+LOCATION:Aula 2
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_203@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T070000Z
+DTEND:20260603T074000Z
+SUMMARY:Biometría\, IA y detección del engaño. El papel del detective y el análisis conductual
+DESCRIPTION:Ponentes: Esther Gómez\\n\\nDeepfakes\, IA y biometría plantean si una inferencia algorítmica puede convertirse en prueba. La ponencia analiza el papel del detective\, límites jurídicos\, credibilidad y validez probatoria.
+LOCATION:Aula 11
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_204@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T070000Z
+DTEND:20260603T074000Z
+SUMMARY:DDoS: de la denegación de servicio a la denegación de confianza
+DESCRIPTION:Ponentes: PN \\n\\nA partir de incidentes recientes\, se analizará como ciertas ciberamenazas pueden transformar una incidencia técnica en una crisis de continuidad\, reputación y confianza por las organizaciones. 
+LOCATION:Aula 10
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_199@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T070000Z
+DTEND:20260603T074000Z
+SUMMARY:Desmitificando la IA
+DESCRIPTION:Ponentes: Francisco Moreno\\n\\nUtilización de sistemas autónomos para la investigación y protección de vulnerabilidades.
+LOCATION:Aula 6
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_200@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T070000Z
+DTEND:20260603T074000Z
+SUMMARY:El incidente que no parecía un incidente: simulación de crisis\, IA y caos en M365
+DESCRIPTION:Ponentes: Sandra Bardon\, Aranzazu Herráez\\n\\nLa IA acelera la ciberseguridad y el caos. Esta simulación enfrenta a los asistente a una crisis en Microsoft 365\, donde accesos legítimos y decisiones automatizadas dificultan distinguir el ataque
+LOCATION:Aula 5
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_201@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T070000Z
+DTEND:20260603T074000Z
+SUMMARY:El rugir del dragón: uniendo los puntos y conectando las campañas de los grupos APT chinos
+DESCRIPTION:Ponentes: Josep Albors\\n\\nAnalizaremos la correlación entre diferentes grupos APT y de cibercriminales con origen en China\, la relación entre ellos y varias campañas recientes donde revisaremos su impacto en diversas regiones.
+LOCATION:Aula 3
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_193@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T070000Z
+DTEND:20260603T080000Z
+SUMMARY:Magnet AXIOM en acción: configuración inteligente y análisis forense con Examine
+DESCRIPTION:Ponentes: Christian Relaño\\n\\nDe la teoría a la práctica: sesión en vivo dedicada a la caza y análisis de amenazas críticas en smartphones infectados. Descubre cómo actúan los ciberdelincuentes y cómo frenar sus ataques.
+LOCATION:Laboratorio Forense
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_196@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T070000Z
+DTEND:20260603T074000Z
+SUMMARY:OPSEC y anonimato en la red: Rastro Cero
+DESCRIPTION:Ponentes: Juan Ardizón\, Sergio Varela\\n\\nGuía técnica de anonimato total: hardware\, OS\, tráfico y pagos. Exploraremos la perfilación de adversarios\, OPSEC y un laboratorio comparando entornos con y sin protección.
+LOCATION:Aula 9
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_245@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T070000Z
+DTEND:20260603T074000Z
+SUMMARY:Parthenon - Inteligencia Policial
+DESCRIPTION:Ponentes: Enrique Martinez\, Jesús Martinez\\n\\nParthenon es un software diseñado para policías\, usando la correlación de datos masivos de manera automática\, simplificación de procesos de investigación y reconocimiento facial avanzado para su fin
+LOCATION:Aula 12
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_198@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T070000Z
+DTEND:20260603T074000Z
+SUMMARY:Protegiendo tu vida digital: el cibercrimen ya no distingue entre empresas y personas
+DESCRIPTION:Ponentes: Rafael López\\n\\nVacaciones\, WhatsApp\, Instagram\, Gmail o incluso un cajero automático. El cibercrimen ya forma parte de nuestra vida diaria. Casos reales\, ataques actuales y cómo protegerte.
+LOCATION:Aula 7
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_293@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T070000Z
+DTEND:20260603T074000Z
+SUMMARY:Proyectos de innovación del Área de Informática 2026
+DESCRIPTION:Ponentes: Bernardino Cortijo\\n\\nRecorrido de los proyectos de innovación que se han desarrollado en los últimos 12 meses\, dentro del área de informática\, relativos a la innovación.
+LOCATION:Aula 4
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_205@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T070000Z
+DTEND:20260603T074000Z
+SUMMARY:Qué viene el lobo: nuevos retos regulatorios en ciberseguridad y vida más allá del hacking ético
+DESCRIPTION:Ponentes: Amanda Segura\\n\\nNuevos marcos regulatorios en ciberseguridad: NIS2 y su trasposición tardía\, IA Act como adalid de la gobernanza de la IA. Salidas laborales en ciberseguridad más allá del hacking ético: CISO office.
+LOCATION:Aula 1
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_197@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T070000Z
+DTEND:20260603T074000Z
+SUMMARY:SCAYLE y el uso de tecnologías cuánticas QKD para la ciberseguridad
+DESCRIPTION:Ponentes: José Manuel Martinez\\n\\nEstoy propuesto para dos ponencias que ejecutaría seguidas. En la primera se hará una presentación del Centro de Supercomputacíon SCAYLE y en la segunda se hablará de QKD
+LOCATION:Aula 8
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_195@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T070000Z
+DTEND:20260603T073500Z
+SUMMARY:Seguridad. Eficacia. Rendimiento. La propuesta de Zebra Technologies para la Seguridad Pública
+DESCRIPTION:Ponentes: Carlos de la Cuesta\\n\\nPresentación de la propuesta de valor de Zebra Technologies para la Seguridad Pública\, basada en tres pilares: Movilidad Operativa\, Localización y Visibilidad de Activos\, y Comunicaciones Críticas. 
+LOCATION:Sala de Congresos
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_191@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T074500Z
+DTEND:20260603T082000Z
+SUMMARY:Grupo Inteligencia Artificial del ISMS. Guías para ayudar en la gestión de la ciberseguridad de la IA
+DESCRIPTION:Ponentes: José Ramón Monleón\\n\\nDentro del ISMS hemos elaborado una serie de guías para ayudar a las empresas en como abordar sus necesidades en la implantación de los modelos de IA de forma segura.
+LOCATION:Sala de Congresos
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_192@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T074500Z
+DTEND:20260603T082000Z
+SUMMARY:Solución multicapa de Huawei
+DESCRIPTION:Ponentes: Víctor Requena\\n\\nLa IA ha explotado el valor y volumen de los tados\, pero también está permitiendo acelerar los ciberataques. A través de las innovaciones de Huawei\, veremos como construir una infraestructura segura.
+LOCATION:Auditorio
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_167@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T075500Z
+DTEND:20260603T083500Z
+SUMMARY:¿Por qué Anthropic hace imprescidible un buena segmentación?
+DESCRIPTION:Ponentes: Julen Cordon\\n\\nAnte el potencial disruptor de tecnología capaz de identificar masiva y rapidamente vulnerabilidades y sus exploits\, veremos como la segmentacion de red cobra mucha más relevancia y como hacerla BIEN
+LOCATION:Aula 1
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_246@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T075500Z
+DTEND:20260603T083500Z
+SUMMARY:APOLLO PARSE: del caos a la inteligencia operativa
+DESCRIPTION:Ponentes: José Raúl Castillo\\n\\nEXTRAE ENTIDADES DE DOCUMENTOS MULTIFORMATO E IMÁGENES Y EXPÓRTALAS EN HOJAS DE CÁLCULO. INDEXACIÓN SEMÁNTICA AVANZADA (LOCALIZA EL DATO EN SEGUNDOS). ANÁLISIS INTELIGENTE PARA CORREOS ELECTRÓNICOS.
+LOCATION:Aula 10
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_163@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T075500Z
+DTEND:20260603T083500Z
+SUMMARY:Captación de insiders en empresas por parte del cibercrimen
+DESCRIPTION:Ponentes: Marta Paredes\, Javier Rodriguez\\n\\nAnálisis de las tácticas\, técnicas y procedimientos de actores cibercriminales para la captación de empleados que faciliten ciberataques\, evadiendo las medidas de ciberseguridad.
+LOCATION:Aula 4
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_156@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T075500Z
+DTEND:20260603T083500Z
+SUMMARY:CTF: Operación PARANZE 
+DESCRIPTION:Ponentes: María Colmenero\, María Contreras\\n\\nUtiliza en tu investigación las herramientas del Europol Platform for Experts (EPE) y descubre la identidad del sospechoso. 
+LOCATION:Aula DOTD
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_159@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T075500Z
+DTEND:20260603T083500Z
+SUMMARY:Del ataque a la evidencia: análisis forense e identidad digital en entornos monitorizados
+DESCRIPTION:Ponentes: Juan Carlos Blanco\\n\\nSe abordará el ciclo completo de un incidente de ciberseguridad\, desde la ejecución de un ataque controlado hasta la reconstrucción forense de los hechos y la atribución de identidad digital.
+LOCATION:Aula 9
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_161@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T075500Z
+DTEND:20260603T083500Z
+SUMMARY:Del dato al dinero: la cadena de valor del cibercrimen
+DESCRIPTION:Ponentes: Sergio Roselló\\n\\nEl cibercrimen convierte los datos robados en ingresos mediante procesos automatizados y mercados ilegales. Conocer los eslabones de la cadena es necesario para poder interrumpirla.
+LOCATION:Aula 6
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_253@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T075500Z
+DTEND:20260603T083500Z
+SUMMARY:Entidad agéntica\, de la teoría a la práctica
+DESCRIPTION:Ponentes: Diego Ovejero\\n\\nCompartire casos de uso reales de como la tecnología de Salesforce puede ayudar a las entidades con sus retos.
+LOCATION:Aula 8
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_162@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T075500Z
+DTEND:20260603T083500Z
+SUMMARY:Inteligencia en las BBDD de incidencias
+DESCRIPTION:Ponentes: Luis Mairata\\n\\nLas BBDD de incidencias son un vector de la TIC escasamente atendido y\, sin embargo\, su correcta configuración y explotación es una fuente de información privilegiada. Analizaremos esta potencialidad.
+LOCATION:Aula 5
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_164@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T075500Z
+DTEND:20260603T083500Z
+SUMMARY:La desprotección digital.
+DESCRIPTION:Ponentes: Laura Giménez\\n\\nNuestros datos son nuestra moneda\, cada día\, millones de personas en España son víctimas de delitos digitales sin saberlo.
+LOCATION:Aula 3
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_116@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T075500Z
+DTEND:20260603T083500Z
+SUMMARY:La investigacion forense digital. De la extraccion al informe con ayuda de IA
+DESCRIPTION:Ponentes: Asís Angolotti\\n\\nUna presentación sobre la tecnología de extracción de información digital y las diferentes herramientas tecnológicas que ayudan a hacer las investigaciones\, identificar evidencias y redactar informes.
+LOCATION:Aula CELLEBRITE
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_166@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T075500Z
+DTEND:20260603T083500Z
+SUMMARY:La protección de datos en el ámbito de la investigación privada
+DESCRIPTION:Ponentes: Francisco Pérez\\n\\nAspectos a tener en cuenta sobre la regulación de la protección de datos en el ámbito investigador
+LOCATION:Aula 11
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_165@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T075500Z
+DTEND:20260603T083500Z
+SUMMARY:Mastering the evidence High-Fidelity Forensic Training
+DESCRIPTION:Ponentes: Ángel Luis  López\\n\\nUna combinación de simulación avanzada (CyberRange) y una plataforma avanza para la detección y análisis de amenazas basada en archivos de evidencias (Oriónmalware)\, crea el entorno definitivo.
+LOCATION:Aula 2
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_160@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T075500Z
+DTEND:20260603T083500Z
+SUMMARY:No confIA ni en tu cara\, ni en tú voz!!
+DESCRIPTION:Ponentes: Raúl Romero\\n\\nRiesgos actuales debidos a la ingeniería social + IA para las organizaciones y para todos los ciudadanos\, tecnología actual a disposición de cualquiera\, medidas técnicas y no técnicas para protegerse
+LOCATION:Aula 7
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_158@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T075500Z
+DTEND:20260603T083500Z
+SUMMARY:OnRetrieval Group presenta Chainalysis Agents: calidad de datos más IA
+DESCRIPTION:Ponentes: Pedro Gómez\\n\\nOnRetrieval Group. Taller y demo de Chainalysis Agents. Descubre cómo la IA abre nuevas técnicas de investigación usando datos de Chainalysis como materia prima. Además presentaremos Chainalysis LABS 
+LOCATION:Aula 12
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_155@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T075500Z
+DTEND:20260603T083500Z
+SUMMARY:Taller de búsqueda y triaje de criptoactivos en entradas y registros
+DESCRIPTION:Ponentes: Alejandro Andrés\\n\\nTaller participativo en el que experimentaremos con ejemplos realistas de artefactos relacionados con los criptoactivos que pueden aparecernos durante las diligencias de entrada y registro.
+LOCATION:Aula UCC 1
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_282@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T075500Z
+DTEND:20260603T085500Z
+SUMMARY:Taller de la nueva intranet webPol
+DESCRIPTION:Ponentes: Policía Nacional\\n\\n
+LOCATION:Aulas 3 y 4 de Informática
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_248@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T080000Z
+DTEND:20260603T100000Z
+SUMMARY:Defensa personal policial
+DESCRIPTION:Ponentes: Oscar Gangoso\\n\\nTécnicas básicas de Defensa Personal
+LOCATION:TALLER DE AUTOPROTECCIÓN
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_150@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T083000Z
+DTEND:20260603T090500Z
+SUMMARY:Amenazas a la identidad en el mundo moderno y la vida más allá del AD 
+DESCRIPTION:Ponentes: Ramiro Céspedes\\n\\nEn esta ponencia presentaré casos y ataques reales en los cuales el compromiso de la Identidad resulta siempre el vector principal de entrada y explicaré la necesidad de securizarla más allá del AD.
+LOCATION:Sala de Congresos
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_227@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T083000Z
+DTEND:20260603T092500Z
+SUMMARY:Mesa Redonda "Infraestructuras críticas bajo fuego híbrido"
+DESCRIPTION:Ponentes: Sonia Gibaja\, Jose Antonio Vázquez\, Natalia Galán\, Francisco Javier Candau\, Juan Carlos González\\n\\nMesa redonda
+LOCATION:Auditorio
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_119@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T085000Z
+DTEND:20260603T093000Z
+SUMMARY:¿Quién dejó el bluetooth encendido?
+DESCRIPTION:Ponentes: Elisa Alises\\n\\n30€ de hardware en las manos equivocadas? Riesgos reales en la interceptación\, monitoreo y a veces explotación de Bluetooth.
+LOCATION:Aula 5
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_117@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T085000Z
+DTEND:20260603T093000Z
+SUMMARY:¿Son los hospitales infraestructuras críticas?
+DESCRIPTION:Ponentes: Santiago Garcia\\n\\n¿Son los hospitales españoles infraestructuras críticas? Encuadre normativo\, Ley PIC 2011 . Ley Resiliencia Entidades Críticas 2026. Comparativa de enfoques. Presente y futuro.
+LOCATION:Aula 9
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_122@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T085000Z
+DTEND:20260603T093000Z
+SUMMARY:Análisis de una red 5G SA privada
+DESCRIPTION:Ponentes: Joel Serna\\n\\nDurante la charla se presentará el trabajo realizado en una auditoría de seguridad sobre una red 5G SA privada desplegada en un cliente del sector industrial.
+LOCATION:Aula 2
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_115@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T085000Z
+DTEND:20260603T093000Z
+SUMMARY:Atrapa la bandera: Operación Paranze
+DESCRIPTION:Ponentes: María Contreras\, María Colmenero\, María Panizo\, Isis Tous\\n\\nRealización de taller Atrapa la bandera\, mediante el empleo de herramientas gratuitas puestas a disposición de las FCSE por parte de Europol.
+LOCATION:Aula DOTD
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_124@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T085000Z
+DTEND:20260603T093000Z
+SUMMARY:Blindar el caos: asegurando datos e IA en infraestructuras híbridas
+DESCRIPTION:Ponentes: Jesus Ruiz\\n\\nDescubre cómo unificar la seguridad de tus datos e IA en entornos híbridos. Analizaremos las claves para eliminsr la fricción\, reducir riesgos y tomsr el control frente a las amenazas modernas.
+LOCATION:Aula 1
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_120@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T085000Z
+DTEND:20260603T093000Z
+SUMMARY:Ciberestafas y víctimas digitales: claves prácticas para entender\, documentar y defender el caso
+DESCRIPTION:Ponentes: Marcelo Tello\\n\\nPonencia práctica sobre phishing\, fraudes de inversión y recovery scams\, abordando responsabilidad bancaria y datos clave a identificar en denuncias e investigaciones policiales.
+LOCATION:Aula 4
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_8@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T085000Z
+DTEND:20260603T093000Z
+SUMMARY:Convirtiendo WhatsApp\, Telegram\, OSINT y datos multifuente en inteligencia accionable
+DESCRIPTION:Ponentes: Gabriel Bustamante\\n\\nInteligencia Integrada para Fuerzas y Cuerpos de Seguridad. Utilizar tecnología de Intercepción Legal y análisis OSINT potenciada por IA de reconocimiento de patrones para generar inteligencia.
+LOCATION:Aula 8
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_264@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T085000Z
+DTEND:20260603T093000Z
+SUMMARY:Dinero digital\, más allá de las criptomonedas
+DESCRIPTION:Ponentes: Alejandro Andrés\\n\\n
+LOCATION:Aula UCC 1
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_121@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T085000Z
+DTEND:20260603T093000Z
+SUMMARY:Ecosistema de amenazas contra la sanidad: de la agresión física al ataque digital
+DESCRIPTION:Ponentes: Rosalía Asunción Fernández\\n\\nLa violencia contra los profesionales en el ámbito de la Salud ha evolucionado hacia un escenario donde conviven aagresiones físicas con nuevas amenazas digitales y reputacionales. Nuevos Desafíos.
+LOCATION:Aula 3
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_123@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T085000Z
+DTEND:20260603T093000Z
+SUMMARY:Forense informático operativo. De indicios digitales a líneas de investigación 
+DESCRIPTION:Ponentes: Enrique Arranz\\n\\nEn esta ponencia hablamos de informática forense como medio de investigación en el ámbito de la investigación privada. Básicamente conectar todo lo digital dentro de líneas de investigación complejas
+LOCATION:Aula 11
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_243@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T085000Z
+DTEND:20260603T093000Z
+SUMMARY:Infraestructuras críticas y servicio público: ciberseguridad y responsabilidad ante incidentes
+DESCRIPTION:Ponentes: Paula María Tomé\\n\\nSe abordará la ciberseguridad en las infraestructuras críticas analizando las obligaciones jurídicas preventivas\, la coordinación administrativa y los regímenes de responsabilidad aplicables. 
+LOCATION:Aula 7
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_75@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T085000Z
+DTEND:20260603T093000Z
+SUMMARY:Jamf Mobile Forensics: cazando amenazas avanzadas en iOS y Android
+DESCRIPTION:Ponentes: Christian Relaño\\n\\nDe la teoría a la práctica: sesión en vivo dedicada a la caza y análisis de amenazas críticas en smartphones infectados. Descubre cómo actúan los ciberdelincuentes y cómo frenar sus ataques.
+LOCATION:Aula 10
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_254@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T085000Z
+DTEND:20260603T093000Z
+SUMMARY:Lo que viene no cabe en un antivirus
+DESCRIPTION:Ponentes: Ana Gómez\\n\\nUna mirada a las tendencias que están cambiando la ciberseguridad en la sociedad: IA\, identidad\, regulación\, talento y nuevas formas de atacar y defender. Para distinguir modas de señales reales.
+LOCATION:Aula 12
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_118@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T085000Z
+DTEND:20260603T093000Z
+SUMMARY:Perfilado Psicológico Indirecto y vHUMINT en la investigación del cibercrimen
+DESCRIPTION:Ponentes: Raquel Ibáñez\\n\\nPerfilado del ciberdelincuente a partir de su huella digital en internet para orientar estrategias de infiltración\, persuasión psicológica y obtención de inteligencia vHUMINT con apoyo de la IA.
+LOCATION:Aula 6
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_90@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T085000Z
+DTEND:20260603T093000Z
+SUMMARY:Seguridad híbrida\, Cómo el IoT puede ser tu peor pesadilla
+DESCRIPTION:Ponentes: Javier Luzón\\n\\nActualmente existen muchos dispositivos IoT que dan soporte a la resiliencia física y procesos de negocio como CCTV\, PCI\, Control de Accesos\, que pueden ser una puerta al riesgo digital
+LOCATION:Aula 14
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_283@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T085000Z
+DTEND:20260603T095000Z
+SUMMARY:Taller de ePolPatrol 2.0
+DESCRIPTION:Ponentes: Policía Nacional\\n\\n
+LOCATION:Aulas 3 y 4 de Informática
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_233@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T085000Z
+DTEND:20260603T093000Z
+SUMMARY:Taller de primeros auxilios
+DESCRIPTION:Ponentes: Aida María  Valero\, Antonio Jose San Román\, Francisco Jose  Ruano\, Rafael Mayorga\, Antonio José San Román\, Francisco Jose  Ruano\, Rafael Mayorga\\n\\nSoporte vital básico y desfibrilación. 
+LOCATION:Aula TAU
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_111@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T090000Z
+DTEND:20260603T100000Z
+SUMMARY:Next Gen Malware Analysis Workshop: Reversing  IA
+DESCRIPTION:Ponentes: Pablo de la Hera\, Alberto Tascón\, Alberto Tascón\\n\\nWorkshop práctico sobre análisis de malware que combina herramientas tradicionales\, automatización e IA para apoyar y enriquecer investigaciones técnicas y forenses reales.
+LOCATION:Laboratorio Forense
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_109@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T091500Z
+DTEND:20260603T095000Z
+SUMMARY:Infraestructuras críticas bajo presión: el papel del hacktivismo
+DESCRIPTION:Ponentes: Daniel Molina\, Nerea Caja\\n\\nEsta exposición explica el papel del hacktivismo y su evolución para convertirse en un actor con capacidad de disrupción en sistemas OT\, ICS\, SCADA.
+LOCATION:Sala de Congresos
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_108@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T093500Z
+DTEND:20260603T101000Z
+SUMMARY:Cuando las reglas dejan de ser fijas: reinventando identidades y accesos
+DESCRIPTION:Ponentes: Elena Cordero\\n\\nLa explosión de la IA agentica y la hiperautomatización está removiendo los cimientos del control de las identidades y los permisos de acceso. ¿Qué hoja de ruta podemos seguir para estar preparados?
+LOCATION:Auditorio
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_274@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T094500Z
+DTEND:20260603T104000Z
+SUMMARY:Evento
+DESCRIPTION:Ponentes: Jorge Yeray Manrique\, Ángel García\\n\\n
+LOCATION:Aula 10
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_78@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T094500Z
+DTEND:20260603T104000Z
+SUMMARY:El nuevo paradigma de desarrollo en la Policía Nacional: calidad\, velocidad\, e integración de la IA
+DESCRIPTION:Ponentes: Pablo Nebreda\\n\\nExplicación de la nueva metodología de trabajo\, el aseguramiento de la calidad\, la integración continua y la implementación de la IA en el ciclo de desarrollo de software en la Policía Nacional
+LOCATION:Aula 8
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_83@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T094500Z
+DTEND:20260603T104000Z
+SUMMARY:Esta es mi identidad digital. Si no te gusta\, tengo otras
+DESCRIPTION:Ponentes: Sandra Vázquez\\n\\nEn redes sociales no somos uno: somos versiones. Esta charla analiza cómo la identidad digital\, el anonimato y la desinhibición influyen en nuestra conducta y en la relación virtual con los demás
+LOCATION:Aula 3
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_22@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T094500Z
+DTEND:20260603T104000Z
+SUMMARY:Evolución del fraude en cajeros automáticos
+DESCRIPTION:Ponentes: Juan Pablo Berbeira\, Juan Pablo Berbeira\, Juan Pablo Berbeira\, Oscar Morales\, Oscar Morales\\n\\n
+LOCATION:Aula C
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_86@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T094500Z
+DTEND:20260603T104000Z
+SUMMARY:Innovación con proposito\, claves para crecer en un entorno retador
+DESCRIPTION:Ponentes: Francisco Ramirez\\n\\nEn un entorno retador es importante fijar nuestros objetivos\, conocernos a nostros mismos y ofrecer siempre nuestra mejor propuesta de valor.
+LOCATION:Aula 1
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_129@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T094500Z
+DTEND:20260603T104000Z
+SUMMARY:Inteligencia Artificial en ciberseguridad: los robots humanoides como vector de ataque
+DESCRIPTION:Ponentes: Víctor Mayoral\\n\\nEsta ponencia presenta el primer hack a un robot humanoide comercial y cómo estos dispositivos son caballos de troya contra nurestra privacidad. Basado en el artículo www.arxiv.org/pdf/2509.14139
+LOCATION:Aula 12
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_80@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T094500Z
+DTEND:20260603T104000Z
+SUMMARY:La desinformación: desafíos jurídicos\, medios facilitadores y casos de interés
+DESCRIPTION:Ponentes: PN \\n\\nCONTENIDO:AMENAZA A LA SEGURIDAD NACIONAL Y DESAFÍOS JURÍDICOS\, MEDIOS Y RECURSOS FACILITADORES DE DESINFORMACIÓN\,CASOS DE INTERÉS
+LOCATION:Aula 6
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_85@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T094500Z
+DTEND:20260603T104000Z
+SUMMARY:La investigación tecnológica del detective y su valor en el proceso penal
+DESCRIPTION:Ponentes: Luis Lafont\\n\\nAnalizaremos la investigación tecnológica del detective y su valor ante los tribunales en el proceso penal.
+LOCATION:Aula 11
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_82@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T094500Z
+DTEND:20260603T104000Z
+SUMMARY:Ni siquiera la Inteligencia Artificial nos salvará de la estupidez humana
+DESCRIPTION:Ponentes: Francisco Javier Cabida\\n\\nEl gran riesgo de la IA no es que nos esclavice\, sino que al abusar nosotros de ella dejemos de pensar por nuestra cuenta. Analizaremos casos reales críticos\, y recomendaremos buenas prácticas.
+LOCATION:Aula 5
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_77@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T094500Z
+DTEND:20260603T104000Z
+SUMMARY:Proteccion del dato en la era de la IA: prevencion\, control y trazabilidad
+DESCRIPTION:Ponentes: Jose María Ferrer\\n\\nLa IA generativa nos ha aportado beneficios\, pero tambien nuevas maneras en las que nuestros datos se ven aun mas expuestos. DLP\, Clasificacion y trazabilidad son claves para protegerlos.
+LOCATION:Aula 9
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_81@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T094500Z
+DTEND:20260603T104000Z
+SUMMARY:Resolviendo ciberdelitos de forma eficiente desde comisaría
+DESCRIPTION:Ponentes: Eduardo Javier Sánchez\\n\\nTaller de como afrontar casos de ciberdelitos con casos reales de pederastia\, ciberestafas\, sextorsión o acoso en RRSS. Perfilado de los delincuentes y acciones a llevar a cabo en la investigación.
+LOCATION:Aula 4
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_84@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T094500Z
+DTEND:20260603T104000Z
+SUMMARY:SOC moderno frente al cibercrimen 3.0: correlación avanzada\, IA y automatización ante amenazas de IA
+DESCRIPTION:Ponentes: Manuel García\\n\\nAnálisis de la evolucionan las arquitecturas de SOC moderno hacia modelos basados en correlación avanzada\, uso de IAs y automatización para detectar y responder a amenazas basadas en IA generativa.
+LOCATION:Aula 2
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_234@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T094500Z
+DTEND:20260603T104000Z
+SUMMARY:Taller de primeros auxilios
+DESCRIPTION:Ponentes: Aida María  Valero\, Antonio Jose San Román\, Francisco Jose  Ruano\, Rafael Mayorga\, Antonio José San Román\, Francisco Jose  Ruano\, Rafael Mayorga\\n\\nSoporte vital básico y desfibrilación. 
+LOCATION:Aula TAU
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_284@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T094500Z
+DTEND:20260603T104500Z
+SUMMARY:Taller de Verificación Operativa Automática de documentos (veriDoc) 
+DESCRIPTION:Ponentes: Policía Nacional\\n\\n
+LOCATION:Aulas 3 y 4 de Informática
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_79@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T094500Z
+DTEND:20260603T104000Z
+SUMMARY:Wazuh 5.0: nuevas funcionalidades y demostración en vivo de detección de ciberataques
+DESCRIPTION:Ponentes: Miguel Casares\\n\\nDemo real de Wazuh 5.0 protegiendo un servidor web en vivo. Monitorización en vivo\, bloqueo automático e integración de Inteligencia Artificial en el triaje operativo.
+LOCATION:Aula 7
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_231@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T100000Z
+DTEND:20260603T120000Z
+SUMMARY:Taller de conducción
+DESCRIPTION:Ponentes: Juan José Ballesteros\, Tomás García\, Encabo Saez\, Tomás García\, Encabo Saez\, Tomás García\, Encabo Saez\\n\\nTécnicas de conducción y acción operativa policial con vehículos
+LOCATION:TALLER DE CONDUCCIÓN
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_76@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T100000Z
+DTEND:20260603T103500Z
+SUMMARY:Transformación de la gestión\, operación y atención con Salesforce
+DESCRIPTION:Ponentes: Daniel Palma\, Roberto Casado\\n\\nSe profundizará en cómo Salesforce impulsa la eficiencia Operativa\, la Gestión y la Atención Ciudadana en entidades de Seguridad Nacional mediante IA\, automatización y visión unificada del dato
+LOCATION:Sala de Congresos
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_292@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T102000Z
+DTEND:20260603T105500Z
+SUMMARY:Demerzel Project: Robot UGV Native AI
+DESCRIPTION:Ponentes: Miguel Ángel De Castro\\n\\nEl proyecto Demerzel presenta un robot UGV cuyo código ha sido desarrollado completamente por inteligencia artificial. Demostraremos tanto las capacidades como los riesgos inherentes de la IA.
+LOCATION:Auditorio
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_194@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T103000Z
+DTEND:20260603T113000Z
+SUMMARY:Magnet AXIOM en acción: configuración inteligente y análisis forense con Examine
+DESCRIPTION:Ponentes: Christian Relaño\\n\\nDe la teoría a la práctica: sesión en vivo dedicada a la caza y análisis de amenazas críticas en smartphones infectados. Descubre cómo actúan los ciberdelincuentes y cómo frenar sus ataques.
+LOCATION:Laboratorio Forense
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_17@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T104500Z
+DTEND:20260603T112000Z
+SUMMARY:La IA empieza en los datos: claves para construir plataformas preparadas para el futuro
+DESCRIPTION:Ponentes: Alejandro Rebolledo\, Paula García\\n\\nLa IA empieza en los datos. Claves para construir una base sólida y de alto rendimiento que garantize seguridad\, soberanía y habilite iniciativas de IA con NetApp.
+LOCATION:Sala de Congresos
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_52@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T105500Z
+DTEND:20260603T113500Z
+SUMMARY:C1bercrim3n: llamadas telefónicas maliciosas y mensajes molestos. Riesgo y solución
+DESCRIPTION:Ponentes: José Ángel Fernández\\n\\nVeremos los riesgos ciber más comunes (llamadas telefónicas maliciosas\, correos\, mensajes\, etc.) y aprenderemos cómo detectarlos y evitar caer en su trampa\; también qué hacer si nos engañaron.
+LOCATION:Aula 8
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_51@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T105500Z
+DTEND:20260603T113500Z
+SUMMARY:Científicos friki haciendo forense digital 
+DESCRIPTION:Ponentes: Juan Torres\\n\\nImportancia del método científico en el trabajo del forense. Etapas desde la recolección a la presentación de resultados. Reproductibilidad. Estandarización. Validez
+LOCATION:Aula 9
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_56@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T105500Z
+DTEND:20260603T113500Z
+SUMMARY:El lado oculto de Internet: metodologías de investigación criminal en redes oscuras
+DESCRIPTION:Ponentes: Facundo Gallo\\n\\nExposición sobre metodologías para la identificación de sujetos activos relacionados con CSAM en la Dark Web\; evidencias de gaps tecnológicos que posibilitan la investigación criminal.
+LOCATION:Aula 4
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_54@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T105500Z
+DTEND:20260603T113500Z
+SUMMARY:Herramientas de apoyo tecnológico disponibles en la Policía Nacional. Grupo 42
+DESCRIPTION:Ponentes: Carlos Tercero\\n\\nLa ponencia versará sobre los servicios ofrecidos por el Grupo 42 de la Unidad Central de Apoyo Tecnológico. El objetivo es dar a conocer dentro de nuestra corporación las posibilidades que ofrece.
+LOCATION:Aula 6
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_59@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T105500Z
+DTEND:20260603T113500Z
+SUMMARY:La línea de ayuda en ciberseguridad y los detectives
+DESCRIPTION:Ponentes: Ángela María García\\n\\nPonencia sobre la Línea de Ayuda en Ciberseguridad y los detectives
+LOCATION:Aula 11
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_55@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T105500Z
+DTEND:20260603T113500Z
+SUMMARY:Malware destructivo como instrumento de coerción en la zona gris
+DESCRIPTION:Ponentes: Ángel Luis  Veloy\\n\\nAnálisis del malware destructivo como herramienta de coerción dentro de los conflictos en la zona gris
+LOCATION:Aula 5
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_53@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T105500Z
+DTEND:20260603T113500Z
+SUMMARY:NIS 2\, CRA\, IA Act y otros ingredientes de la sopa de seguridad
+DESCRIPTION:Ponentes: Jesús Valverde\\n\\nLa presente charla pretende aterrizar la complejidad legal y regulatoria: NIS 2\, CRA\, IA Act\, ENS\, ISO 27001\, etc. 
+LOCATION:Aula 7
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_60@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T105500Z
+DTEND:20260603T113500Z
+SUMMARY:Nueva webPol
+DESCRIPTION:Ponentes: Rubén Rivera\\n\\nPresentación de la nueva intranet webPol con su sistema de comunicación integrado\, escalado de noticias\, visibilidad de la información. Reserva de recursos integrada dentro de la intranet.
+LOCATION:Aula 10
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_58@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T105500Z
+DTEND:20260603T113500Z
+SUMMARY:QuaSAR Lab\, tecnologías cuánticas para la seguridad de las comunicaciones
+DESCRIPTION:Ponentes: Jose Manuel Martinez\\n\\nCómo las tecnologías cuánticas están transformando la seguridad de las comunicaciones.
+LOCATION:Aula 2
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_57@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T105500Z
+DTEND:20260603T113500Z
+SUMMARY:Radiocomunicaciones policiales: de la Transición al Tetrapol
+DESCRIPTION:Ponentes: David Marugán\\n\\nEn la ponencia se analizará la historia de las radiocomunicaciones policiales desde sus inicios hasta nuestros días: cifrado\, seguridad operacional\, contrainteligencia\, evolución tecnológica\, etc. 
+LOCATION:Aula 3
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_285@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T105500Z
+DTEND:20260603T115500Z
+SUMMARY:Taller de demostración del nuevo sistema de Enrolado de Detenidos - Personas PID 3.0 
+DESCRIPTION:Ponentes: Policía Nacional\\n\\n
+LOCATION:Aulas 3 y 4 de Informática
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_61@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T105500Z
+DTEND:20260603T113500Z
+SUMMARY:Transparencia y opacidad: anatomia de la ofuscacion cripto usada por el cibercrimen
+DESCRIPTION:Ponentes: Pablo Fernández\\n\\nEl blockchain es un registro público. Hasta que deja de serlo. Descubre las 7 técnicas sofisticadas que permiten que los cibercriminales hagan desaparecer fondos robados\, con casos reales y defensas
+LOCATION:Aula 1
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_223@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T110500Z
+DTEND:20260603T114000Z
+SUMMARY:Cuando el riesgo se sienta delante del teclado
+DESCRIPTION:Ponentes: Pedro Álamo\, Jose Luis Suarez\\n\\nEl mayor riesgo ya no está en la red\, sino en las personas. Descubre cómo proteger correo y datos frente a las amenazas avanzadas y fugas de información.
+LOCATION:Auditorio
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_49@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T113000Z
+DTEND:20260603T120500Z
+SUMMARY:Soberania en detección y respuesta
+DESCRIPTION:Ponentes: David Fernández\\n\\nEl nuevo equilibrio Geo político invita a reflexionar sobre la soberania en tecnologías digitales en general y en ciberseguridad en particular. 
+LOCATION:Sala de Congresos
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_48@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T115000Z
+DTEND:20260603T122500Z
+SUMMARY:eBPF monitorización profunda de los entornos
+DESCRIPTION:Ponentes: Jose María Pulgar\\n\\nUso de la tecnología eBPF para la detección de ataques en entornos OT/IoT. Cambios de paradigma de control mediante log a control en tiempo real.
+LOCATION:Auditorio
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_244@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T115000Z
+DTEND:20260603T123000Z
+SUMMARY:MINERVA: sistema integral de apoyo a la ciberInvestigación
+DESCRIPTION:Ponentes: Iván Moreno\\n\\nTaller práctico sobre MINERVA\, mostrando sus ventajas para el investigador mediante un recorrido por análisis de transacciones\, grafos y apoyo a la ciberinvestigación operativa\,
+LOCATION:Aula 6
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_266@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T133000Z
+DTEND:20260603T141000Z
+SUMMARY:Actores nacionales: chavales jugando a ser threat actors
+DESCRIPTION:Ponentes: Sergio Suárez\\n\\n
+LOCATION:Aula 9
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_26@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T133000Z
+DTEND:20260603T141000Z
+SUMMARY:Aproximación policial a la desinformación: ámbito físico y digital de la amenaza híbrida
+DESCRIPTION:Ponentes: PN \\n\\nINTRODUCCIÓN A LA DESINFORMACIÓN Y LAS AMENAZAS HÍBRIDAS: CONCEPTOS BÁSICOS\, RAZONES PARA LA INVESTIGACIÓN POLICIAL\, DIMENSIÓN COGNITIVA\, MEDIDAS DE AUTOPROTECCIÓN Y ANALISIS DE EJEMPLOS.
+LOCATION:Aula 6
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_30@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T133000Z
+DTEND:20260603T141000Z
+SUMMARY:CLICKBAIT\, famosos y crypto
+DESCRIPTION:Ponentes: Selva María Orejón\\n\\nUna radiografía completa del ecosistema de estafas digitales que utilizan la imagen de personajes públicos\, deepfakes e ingeniería social para defraudar\, casos reales y tools de investigación.
+LOCATION:Aula 2
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_32@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T133000Z
+DTEND:20260603T141000Z
+SUMMARY:Cree agentes más precisos\, rápidos e inteligentes basado en ontología con Oracle
+DESCRIPTION:Ponentes: Olivier Perard\\n\\nMás allá del RAG: Agentes inteligentes que realmente entienden tu ecosistema Oracle. Cómo desarrollar una nueva generación de agentes inteligentes con búsqueda hibrida.
+LOCATION:Aula 1
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_28@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T133000Z
+DTEND:20260603T141000Z
+SUMMARY:Cuando la IA se vuelve contra ti (mesa redonda)
+DESCRIPTION:Ponentes: Ignacio  Cosidó\, Rodrigo Varas\, Luis De\\n\\nEsta ponencia explora la superficie de ataques en agentes autónomos de IA cuando actúan con sistemas corporativos. Además\, se explorarán conceptos de detección de anomalías en herramientas de IA
+LOCATION:Aula 4
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_27@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T133000Z
+DTEND:20260603T141000Z
+SUMMARY:Definiendo el futuro del análisis de malware
+DESCRIPTION:Ponentes: Gerardo Fernández\\n\\nAnalizaremos el impacto de la inteligencia artificial en el ecosistema del malware\, centrándonos en el análisis avanzando de amenazas. 
+LOCATION:Aula 5
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_31@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T133000Z
+DTEND:20260603T141000Z
+SUMMARY:Detectives contra el fraude digital. Investigación operativa de fraudes online
+DESCRIPTION:Ponentes: Vicente Delgado\\n\\nEn la investigación de fraudes digitales los principales retos son mucha información dispersa y poco tiempo para convertirla en resultados. Es importante una metodología práctica\, prevención y alerta.
+LOCATION:Aula 11
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_250@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T133000Z
+DTEND:20260603T141000Z
+SUMMARY:El agente encubierto frente al cibercrimen
+DESCRIPTION:Ponentes: Victor Santamaria\, Antonio Álvarez\\n\\nIntroducción a las técnicas empleadas por los agentes encubiertos virtuales en la investigación de delitos llevados a cabo por organizaciones criminales y terroristas.
+LOCATION:Aula 10
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_29@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T133000Z
+DTEND:20260603T141000Z
+SUMMARY:El mejor antivirus eres tú: cómo los ciberdelincuentes consiguen infectarte
+DESCRIPTION:Ponentes: Héctor Paredes\\n\\nEn esta ponencia se busca instruir sobre cómo funcionan los diferentes antivirus para poder comprender cómo los ciberdelincuentes se aprovechan de sus puntos flacos consiguiendo evadir estas defensas.
+LOCATION:Aula 3
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_45@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T133000Z
+DTEND:20260603T140500Z
+SUMMARY:Glasswing\, defensa y observabilidad de la IA en la era agéntica
+DESCRIPTION:Ponentes: Jose Manuel Iglesias\\n\\nAnte las vulnerabilidades expuestas por la IA\, mostraremos cómo Cisco y Splunk protegen la IA en la era agéntica. Observabilidad\, defensa proactiva y gobernanza para entornos críticos.
+LOCATION:Auditorio
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_25@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T133000Z
+DTEND:20260603T141000Z
+SUMMARY:Inteligencia de amenazas: observando al adversario desde dentro
+DESCRIPTION:Ponentes: Diego Carrasco\\n\\nAnalizaremos cómo operan los infostealers bajo el modelo MaaS y cómo obtener inteligencia de amenazas accionable a partir de errores operativos que exponen la infraestructura del adversario.
+LOCATION:Aula 7
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_275@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T133000Z
+DTEND:20260603T141000Z
+SUMMARY:Interoperabilidad de las BBDD policiales europeas
+DESCRIPTION:Ponentes: Francisco José Soler\\n\\nCasos prácticos de la Interoperabilidad para el control fronterizo\, la identificación y detección de identidades múltiples
+LOCATION:Aula 8
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_44@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T133000Z
+DTEND:20260603T140500Z
+SUMMARY:Modelo de colaboración para la ciberdefensa
+DESCRIPTION:Ponentes: Andoni Valverde\\n\\nCompartición y respuesta ágil y coordinada: Modelo de Ciberdefensa en un contexto de amenazas cada vez más ágil y organizaciones con perímetro difuso que se extiende a la cadena de suministro.
+LOCATION:Sala de Congresos
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_232@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T133000Z
+DTEND:20260603T153000Z
+SUMMARY:Taller de conducción
+DESCRIPTION:Ponentes: Juan José Ballesteros\, Tomás García\, Encabo Saez\, Tomás García\, Encabo Saez\, Tomás García\, Encabo Saez\\n\\nTécnicas de conducción y acción operativa policial con vehículos
+LOCATION:TALLER DE CONDUCCIÓN
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_19@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T140000Z
+DTEND:20260603T150000Z
+SUMMARY:Next Gen Malware Analysis Workshop: Reversing AI
+DESCRIPTION:Ponentes: Alberto Tascón\, Pablo Hera\\n\\nWorkshop práctico sobre análisis de malware que combina herramientas tradicionales\, automatización e IA para apoyar y enriquecer investigaciones técnicas y forenses reales.
+LOCATION:Laboratorio Forense
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_228@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T141500Z
+DTEND:20260603T151000Z
+SUMMARY:Mesa Redonda "Infraestructuras críticas en jaque: cuando hackear un sistema informático de una I.C. es más rentable que robar un banco"
+DESCRIPTION:Ponentes: Adrián Nicolás Marchal\, Santiago García\, Álvaro Del Hoyo\, Iñigo Elorrieta\, Victor Requena\\n\\nMesa redonda
+LOCATION:Sala de Congresos
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_251@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T142500Z
+DTEND:20260603T150500Z
+SUMMARY:Creación de perfiles encubiertos para cibermonitorizacion
+DESCRIPTION:Ponentes: Daniel Ruzafa\, Ángel García\\n\\nEn el taller trataremos de cómo poder monitorizar los ciberataques que suceden en la red\, especialmente mediante la creación de perfiles encubiertos de monitorización. 
+LOCATION:Aula 10
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_252@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T142500Z
+DTEND:20260603T150500Z
+SUMMARY:EU NIS2: requerimientos de la directiva y soluciones para garantizar el cumplimiento normativo
+DESCRIPTION:Ponentes: José Ángel Capote\\n\\nCon la futura transposición al ordenamiento jurídico español de la directiva Europea NIS2\, habrá más sectores y empresas que tendrán que adaptarse implementando nuevos requisitos de ciberseguridad. 
+LOCATION:Aula 4
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_23@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T142500Z
+DTEND:20260603T150500Z
+SUMMARY:Evolución del fraude en cajeros automáticos
+DESCRIPTION:Ponentes: Juan Pablo Berbeira\, Juan Pablo Berbeira\, Juan Pablo Berbeira\, Oscar Morales\, Oscar Morales\\n\\n
+LOCATION:Aula C
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_260@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T142500Z
+DTEND:20260603T150500Z
+SUMMARY:IA Soberana contra la ciberdelincuencia. Regresando al origen
+DESCRIPTION:Ponentes: Francisco Javier Gavilán\\n\\nSistema de IA Soberana para analisis forense digital. 
+LOCATION:Aula 3
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_4@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T142500Z
+DTEND:20260603T150500Z
+SUMMARY:Identity Fabric: unifica\, protege y escala la identidad en la era de la IA
+DESCRIPTION:Ponentes: Antonio José Ponce\\n\\nLa identidad se convierte en el nuevo plano de control digital. Exploraremos como crear un Identity fabric seguro\, escalable e interoperable para proteger persona y organizaciones en la era de la IA.
+LOCATION:Aula 1
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_263@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T142500Z
+DTEND:20260603T150500Z
+SUMMARY:Impacto de la Inteligencia Artificial en los delitos de abuso y explotación sexual infantil online
+DESCRIPTION:Ponentes: David García\\n\\nCharla práctica sobre la amenaza que suponen los bots para la seguridad de aplicaciones web. Veremos su naturaleza y el estado del arte\, su actividad y cómo detectarlos para defenderse de ellos.
+LOCATION:Aula 8
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_1@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T142500Z
+DTEND:20260603T150500Z
+SUMMARY:Investigación ciber Aplicada: del indicio a la evidencia
+DESCRIPTION:Ponentes: PN \\n\\nExplicación con un ejemplo ficticio de la parte técnica de una investigación con ciberdelincuencia en las que se explicarán procedimientos y consejos aplicables a otras investigaciones.
+LOCATION:Aula 6
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_b4n4tsao6@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T142500Z
+DTEND:20260603T150500Z
+SUMMARY:La singularidad del atacante: ciberdefensa cuando los exploits se programan en segundos
+DESCRIPTION:Ponentes: Julio Gómez\\n\\nCada 17 minutos nace una vulnerabilidad. Si tu SOC sigue atrapado en la fatiga de alertas y procesos aislados\, estás perdido. Aprende a evolucionar tus operaciones al modelo diamante basado en IA.
+LOCATION:Aula 7
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_290@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T142500Z
+DTEND:20260603T150500Z
+SUMMARY:Para mejorar la seguridad piensa como un hacker
+DESCRIPTION:Ponentes: Guillermo Haro\\n\\n
+LOCATION:Aula 5
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_157@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T142500Z
+DTEND:20260603T150500Z
+SUMMARY:Taller práctico de investigación de dispositivos móviles utilizando UFED Reader
+DESCRIPTION:Ponentes: Asher Rubel\\n\\nTaller práctico sobre el uso de UFED Reader aplicado a investigaciones forenses móviles: exploración de artefactos\, vistas\, funciones y generación de informes forenses.
+LOCATION:Aula 9
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_2@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T142500Z
+DTEND:20260603T150500Z
+SUMMARY:Tu cara es la contraseña: biometría y protección de datos
+DESCRIPTION:Ponentes: Beatriz Fernández\\n\\nAnaliza como el uso del rostro\, el iris\, la huella y otros rasgos físicos para identificarnos y acceder a servicios plantea nuevos retos en privacidad\, datos biométricos y derechos fundamentales.
+LOCATION:Aula 2
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_3@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T142500Z
+DTEND:20260603T150500Z
+SUMMARY:Valor diferencial del detective privado en ciberseguridad
+DESCRIPTION:Ponentes: David Sanmartín\\n\\nPonencia de cierre y conclusiones del Track dedicado a los Detectives Privados. Ofrecerá una visión global\, enlazando las ponencias técnicas con las jurídicas.
+LOCATION:Aula 11
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_237@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260603T155000Z
+DTEND:20260603T162000Z
+SUMMARY:Exhibición de caballos
+DESCRIPTION:Ponentes: Caballería Caballería\\n\\n
+LOCATION:Explanada principal
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_265@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T070000Z
+DTEND:20260604T074000Z
+SUMMARY:Autodefensa digital\, cómo protegerse del crimen 3.0
+DESCRIPTION:Ponentes: Alejandro Andrés\\n\\n
+LOCATION:Aula UCC 2
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_269@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T070000Z
+DTEND:20260604T074000Z
+SUMMARY:Cibercrimen 3.0: pasado\, presente y futuro
+DESCRIPTION:Ponentes: Juan Manuel Matalobos\\n\\nPresentamos cuáles son cuáles son las etapas en las que se ha desarrollado el cibercrimen (pasado)\, la situación actual (presente) y las tendencias que son ayudan a prever su evolucíon (futuro)
+LOCATION:Aula 4
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_216@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T070000Z
+DTEND:20260604T074000Z
+SUMMARY:Contruyendo el mundo con burbujas 5G
+DESCRIPTION:Ponentes: Fernando B\\n\\nDaremos un repaso a las arquitecturas seguras de comunicaciones de telefonía móvil segura y su aplicación con burbujas 5G
+LOCATION:Aula 8
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_224@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T070000Z
+DTEND:20260604T073500Z
+SUMMARY:Cuando el riesgo se sienta delante del teclado
+DESCRIPTION:Ponentes: Conchita Díaz\, Jose Luis Suarez\\n\\n
+LOCATION:Sala de Congresos
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_225@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T070000Z
+DTEND:20260604T073500Z
+SUMMARY:Entidad agéntica\, de la teoría a la práctica
+DESCRIPTION:Ponentes: Carlos Gutiérrez\\n\\nVisión del CSO sobre amenazas ciber: análisis\, preparación y organización\, mostrando cómo se integran todas las capacidades en una multinacional para garantizar la continuidad de servicios esenciales.
+LOCATION:Auditorio
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_218@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T070000Z
+DTEND:20260604T074000Z
+SUMMARY:Inteligencia Artificial aplicada a las Fuerzas y Cuerpos de Seguridad
+DESCRIPTION:Ponentes: Iván Primo\\n\\nINTRODUCCION A LA IA\, TIPOS Y MODELOS DE IA\, NORMATIVA LEGAL APLICABLE A LA IA POLICIAL\, USO DE LA IA EN LAS FUERZAS Y CUERPOS DE SEGURIDAD\, PROBLEMAS\, RETOS Y LIMITES EN EL USO DE LA IA.
+LOCATION:Aula 6
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_220@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T070000Z
+DTEND:20260604T074000Z
+SUMMARY:No te doy la clave del WiFi: seguridad tipo empresarial en redes domésticas
+DESCRIPTION:Ponentes: Antonio J Caba\\n\\nVamos a sustituir las contraseñas con certificados digitales configurando hardware accesible y de bajo coste para crear una arquitectura de ciberseguridad doméstica de grado empresarial.
+LOCATION:Aula 2
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_221@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T070000Z
+DTEND:20260604T074000Z
+SUMMARY:PATROL 2.0
+DESCRIPTION:Ponentes: León Lasa\, Jaime Guerra\\n\\nPonencia sobre la herramienta informática policial PATROL 2.0\, la cual consiste en un software instalado en tablets portátiles que permite la consulta de datos policiales sobre personas y objetos.
+LOCATION:Aula 10
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_219@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T070000Z
+DTEND:20260604T074000Z
+SUMMARY:Policía aumentada: ciberinteligencia\, IA\, analítica y prevención en tiempo real
+DESCRIPTION:Ponentes: Hugo Zunzarren\\n\\nLos  nuevos desafíos de seguridad exigen pasar de la reacción a la prevención. Radicalización\, violencia de género\, ámbitos en donde la inteligencia preventiva aporta valor evitando materialización.
+LOCATION:Aula 3
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_217@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T070000Z
+DTEND:20260604T074000Z
+SUMMARY:Sock puppets: el límite de la actividad encubierta digital
+DESCRIPTION:Ponentes: Paula Castro\\n\\nAnalizaremos el uso de identidades ficticias en investigaciones digitales: cuándo el sock puppet deja la observación abierta y pasa a inteligencia encubierta (virtual HUMINT)\, límites e implicaciones
+LOCATION:Aula 7
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_222@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T070000Z
+DTEND:20260604T074000Z
+SUMMARY:Telemetría sin control NO sirve de nada
+DESCRIPTION:Ponentes: Tomás Serapio\\n\\nLa evolución de los ataques ha obligado a cambiar los estándares tradicionales de ciberseguridad. Esto ha creado la necesidad de nuevas soluciones\, de EPP a EDR pasado por SIEM y NDR\, hasta el XDR.
+LOCATION:Aula 1
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_229@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T074500Z
+DTEND:20260604T084000Z
+SUMMARY:Mesa Redonda "Deep Fakes\, Bots y estados hostiles: cuando la mentira organizada es el arma y la colaboración público privada el escudo"
+DESCRIPTION:Ponentes: Salvador Molina\, Diego González\, Martín Sánchez\, Alvaro  Lossada\, Jose Manuel Prada\\n\\nMesa redonda
+LOCATION:Auditorio
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_185@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T075500Z
+DTEND:20260604T083500Z
+SUMMARY:¿Son seguras tus comunicaciones por radio?
+DESCRIPTION:Ponentes: Jorge J\\n\\nSe presentaran los riesgos de las comunicaciones radio y las soluciones nacionales que las mitigan.
+LOCATION:Aula 8
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_184@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T075500Z
+DTEND:20260604T083500Z
+SUMMARY:Atrapa la bandera: Operación Paranze
+DESCRIPTION:Ponentes: María Panizo\, María Colmenero\, María Panizo\, Isis Tous\\n\\nRealización de un taller Captura la bandera\, mediante el empleo de herramientas gratuitas puestas a disposición de las FCSE por parte de Europol.
+LOCATION:Aula DOTD
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_189@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T075500Z
+DTEND:20260604T083500Z
+SUMMARY:De los Bits al Tribunal. Cómo convertir datos técnicos en pruebas judiciales
+DESCRIPTION:Ponentes: Fernando Román\\n\\nA través de un caso ficticio se mostrará como los Peritos Judiciales recaban &quot\;Evidencias Digitales&quot\; que luego serán presentadas ante un tribunal.
+LOCATION:Aula 2
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_270@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T075500Z
+DTEND:20260604T083500Z
+SUMMARY:Desarrollo de Ia en el ámbito de la seguridad
+DESCRIPTION:Ponentes: José Antonio Amador\\n\\nSe desarrolla el uso e implementación de la Inteligencia Artificial en el ámbito de la seguridad 
+LOCATION:Aula 6
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_235@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T075500Z
+DTEND:20260604T083500Z
+SUMMARY:El limite invisible de la IA: el juicio humano en seguridad y crisis globales 
+DESCRIPTION:Ponentes: Sonia Gibaja\\n\\n¿Confiarías en la IA en una crisis? Decisiones estratégicas por IA: simulación y liderazgo en contextos críticos.
+LOCATION:Aula 1
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_187@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T075500Z
+DTEND:20260604T083500Z
+SUMMARY:El USB como vector de ataque: cómo controlarlo y eliminar el riesgo
+DESCRIPTION:Ponentes: Jose Luis Carretero\\n\\nDemostración de amenazas vía USB y cómo SafeDoor analiza\, bloquea\, gestiona y audita\, actuando como punto de control seguro. Mientras Olvido garantiza la eliminación certificada de la información.
+LOCATION:Aula 5
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_183@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T075500Z
+DTEND:20260604T083500Z
+SUMMARY:Investigación tecnológica aplicada a la investigación policial
+DESCRIPTION:Ponentes: Carlos Javier Sancho\\n\\nTodo delito deja una huella digital. Esta ponencia busca analizar cómo la investigación por medios tecnológicos es hoy transversal a cualquier investigación policial dentro del marco legal español.
+LOCATION:Aula UCC 2
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_190@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T075500Z
+DTEND:20260604T083500Z
+SUMMARY:La Inteligencia Artificial en la investigación forense digital: pulsar un botón vs análisis humano
+DESCRIPTION:Ponentes: PN \\n\\nEn 2026 muchas herramientas forenses incluyen en análisis de la evidencia digital con IA pero ¿En qué casos podemos utilizar esta tecnología? ¿Cómo podemos defender este informe ante un juez?
+LOCATION:Aula 10
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_188@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T075500Z
+DTEND:20260604T083500Z
+SUMMARY:Propuesta de escenarios de ciberinteligencia colaborativa en escenarios IoT
+DESCRIPTION:Ponentes: Sonia Solera\, Javier Montesinos\\n\\nTaller práctico centrado en un simulación en tiempo real (CTF). Permite analizar amenazas y vulnerabilidades de ciberseguridad\, mejorando las capacidades técnicas y la toma de decisiones.
+LOCATION:Aula 4
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_286@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T075500Z
+DTEND:20260604T085500Z
+SUMMARY:Taller de la nueva intranet webPol
+DESCRIPTION:Ponentes: Policía Nacional\\n\\n
+LOCATION:Aulas 3 y 4 de Informática
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_186@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T075500Z
+DTEND:20260604T083500Z
+SUMMARY:Tu próximo analista no duerme ¿Desanonimización de perfiles cibercriminales con analistas agénticos
+DESCRIPTION:Ponentes: Pablo Asenjo\\n\\nEsta ponencia explorará cómo los sistemas agénticos permiten automatizar tareas de búsqueda\, enriquecimiento y análisis para perfilar actores cibercriminales y acelerar procesos de desanonimización.
+LOCATION:Aula 7
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_154@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T075500Z
+DTEND:20260604T083500Z
+SUMMARY:Vehículos Integrales de Documentación en situaciones de emergencia
+DESCRIPTION:Ponentes: Roberto Rodríguez\\n\\nLos Vehículos Integrales de Documentación (VIDOC) permiten la expedición de DNI y Pasaporte en cualquier lugar del territorio nacional así como en situaciones de crisis. 
+LOCATION:Aula 9
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_239@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T085000Z
+DTEND:20260604T093000Z
+SUMMARY:Análisis de eventos
+DESCRIPTION:Ponentes: Oscar Jiménez\\n\\nAnálisis de eventos Windows mediante el programa Eventlogx e investigación de fuerza bruta mediante Splunk
+LOCATION:Aula 10
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_141@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T085000Z
+DTEND:20260604T093000Z
+SUMMARY:Atrapa la bandera: Operación Paranze
+DESCRIPTION:Ponentes: Isis Tous\, María Colmenero\, María Panizo\, Isis Tous\\n\\nRealización de taller Captura la bandera\, mediante el empleo de herramientas gratuitas puestas a disposición de las FCSE por parte de Europol.
+LOCATION:Aula DOTD
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_142@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T085000Z
+DTEND:20260604T093000Z
+SUMMARY:Criptografía postcuántica y su afectación en la ciberdelincuencia
+DESCRIPTION:Ponentes: Ursula V\\n\\nSe explicará la amenaza cuántica\, los retos a los que nos enfrentamos para poder superarla (como por ejemplo la migración a criptografía postcuántica) \, y cómo puede afectar en la ciberdelincuencia.
+LOCATION:Aula 8
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_145@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T085000Z
+DTEND:20260604T093000Z
+SUMMARY:Gobernar la IA: de la innovación al control
+DESCRIPTION:Ponentes: David Alcaraz\\n\\nIA como acelerador de doble filo\, veremos riesgos como fuga de datos\, shadow AI\, agentes sin control y vulnerabilidades en el supply de modelos. Requiriendo enfoques Zero Trust y una gobernanza solida
+LOCATION:Aula 4
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_147@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T085000Z
+DTEND:20260604T093000Z
+SUMMARY:Infraestructura blindada: despliegue de servicios seguros
+DESCRIPTION:Ponentes: Sergio Cotarelo\\n\\nDespliega una infraestructura soberana y blindada mediante la orquestación de contenedores y software gratuito. La ciberseguridad no tiene que depender de tu presupuesto\, sino te tu concienciación.
+LOCATION:Aula 2
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_148@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T085000Z
+DTEND:20260604T093000Z
+SUMMARY:Ingeniería inversa de apps y decisiones a las 3 AM
+DESCRIPTION:Ponentes: Krzysztof Grab\, Olivier Vangansbeck\\n\\nDescubre los secretos ocultos de las apps y servicios IPTV! Desarmaremos protecciones\, crackearemos streams y tomaremos decisiones mientras el resto duerme.
+LOCATION:Aula 1
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_146@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T085000Z
+DTEND:20260604T093000Z
+SUMMARY:La amenaza de bolsillo
+DESCRIPTION:Ponentes: Elisa Alises\\n\\nUna visión práctica sobre cómo dispositivos de bajo coste\, pequeños y altamente modificables se han convertido en plataformas capaces de ejecutar múltiples vectores de ataque.
+LOCATION:Aula 3
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_24@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T085000Z
+DTEND:20260604T093000Z
+SUMMARY:La investigación de los delitos en las telecomunicaciones y dark web
+DESCRIPTION:Ponentes: Lucía López\\n\\nSe tratarán los principales medios comisivos\, actualidad y perspectivas de delitos en las telecomunicaciones y dark web.
+LOCATION:Aula UCC 2
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_144@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T085000Z
+DTEND:20260604T093000Z
+SUMMARY:Radar Digital y SOCMINT: sistemas de alerta temprana ante amenazas a la Seguridad Nacional    
+DESCRIPTION:Ponentes: PN \\n\\nTécnicas de investigación en fuentes abiertas y redes sociales: optimización del SOCMINT como radar digital y sistema de alerta temprana ante incidentes críticos de seguridad nacional.
+LOCATION:Aula 6
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_149@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T085000Z
+DTEND:20260604T092500Z
+SUMMARY:Seguridad. Eficacia. Rendimiento. La propuesta de Zebra Technologies para la seguridad pública
+DESCRIPTION:Ponentes: Carlos de la Cuesta\\n\\nPresentación de la propuesta de valor de Zebra Technologies para la Seguridad Pública\, basada en tres pilares: Movilidad Operativa\, Localización y Visibilidad de Activos\, y Comunicaciones Críticas.
+LOCATION:Auditorio
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_143@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T085000Z
+DTEND:20260604T093000Z
+SUMMARY:Simulaciones Tabletop de la teoría a la realidad
+DESCRIPTION:Ponentes: Antonio Fernández\\n\\nFormación técnico-estratégica sobre la ejecución de ejercicios Tabletop para validar planes de respuesta ante incidentes. Los asistentes aprenderán a identificar brechas operativas\, analizar vectores 
+LOCATION:Aula 7
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_240@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T085000Z
+DTEND:20260604T093000Z
+SUMMARY:Sistemas de gestión de evidencias electrónicas
+DESCRIPTION:Ponentes: Enrique Parras\\n\\nLa ponencia hace referencia a las medidas de seguridad a aplicar a las Evidencias Electrónicas\, desde su recogida en la escena del crimen hasta su puesta a disposición judicial.
+LOCATION:Aula 9
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_287@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T085000Z
+DTEND:20260604T095000Z
+SUMMARY:Taller de ePolPatrol 2.0
+DESCRIPTION:Ponentes: Policía Nacional\\n\\n
+LOCATION:Aulas 3 y 4 de Informática
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_140@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T085000Z
+DTEND:20260604T093000Z
+SUMMARY:Técnicas de investigación en ciberataques mediante OSINT y Criptoactivos
+DESCRIPTION:Ponentes: José Temprano\\n\\nLA UNIÓN HACE LA FUERZA. En este taller se expondrán las técnicas de investigación de ciberataques\, con foco en Ransomware\, a través de la convergencia entre OSINT y rastreo de criptoactivos.
+LOCATION:Aula UCC 1
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_114@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T090000Z
+DTEND:20260604T100000Z
+SUMMARY:Next Gen Malware Analysis Workshop: Reversing  IA
+DESCRIPTION:Ponentes: Pablo Hera\, Alberto Tascón\, Alberto Tascón\\n\\nWorkshop práctico sobre análisis de malware que combina herramientas tradicionales\, automatización e IA para apoyar y enriquecer investigaciones técnicas y forenses reales.
+LOCATION:Laboratorio Forense
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_261@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T093500Z
+DTEND:20260604T101000Z
+SUMMARY:Transición hacia las tecnologías postcuánticas en la Policía Nacional\, el DNIe 4.0 y su robustez
+DESCRIPTION:Ponentes: Santiago González\\n\\nLa irrupción de las computación cuántica exige la adaptación de los entornos tecnológicos de la DGP hacia la criptografía postcuántica\, especialmente las PKI´s y el nuevo DNIe 4.0.
+LOCATION:Auditorio
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_273@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T094500Z
+DTEND:20260604T104000Z
+SUMMARY:Evento
+DESCRIPTION:Ponentes: Jorge Herráez\, Ángel García\\n\\n
+LOCATION:Aula 1
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_99@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T094500Z
+DTEND:20260604T104000Z
+SUMMARY:BEC y Fraude al CEO: de la suplantación digital al blanqueo internacional
+DESCRIPTION:Ponentes: Antonino Juan Flores\\n\\nLos fraudes informáticoa tipo BEC y fraude la CEO son los grandes desconocidos incluso de los profesionales de la investigación y  la ciberseguirad. La exposición irá enfocada a darlas a conocer. 
+LOCATION:Aula UCC 2
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_106@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T094500Z
+DTEND:20260604T104000Z
+SUMMARY:CONTROL: fusión de flujos de red e inteligencia para identificar las infraestructuras criminales
+DESCRIPTION:Ponentes: Francisco de Borja Rosales\\n\\nCONTROL es una herramienta para la pronta identificación de ciberactores\, sus infraestructuras y sus víctimas. Una herramienta que acelera exponencialmente las capacidades de investigación. 
+LOCATION:Aula 2
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_107@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T094500Z
+DTEND:20260604T104000Z
+SUMMARY:Cultura 3.0: pasando del empleado formado al usuario seguro
+DESCRIPTION:Ponentes: Álvaro Mota\\n\\nVeremos la importancia de evolucionar el modelo de cultura de la ciberseguridad\, pasando de obligaciones formativas a inculcar valores nucleares que sirvan tanto dentro como fuera del entorno laboral.
+LOCATION:Aula 5
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_241@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T094500Z
+DTEND:20260604T104000Z
+SUMMARY:El analista SOC no es un robot: personas\, estrés y decisiones críticas
+DESCRIPTION:Ponentes: Jorge Monge\\n\\nAnálisis del lado humano del SOC: presión\, fatiga\, sobrecarga de alertas y toma de decisiones críticas bajo estrés. 
+LOCATION:Aula 9
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_103@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T094500Z
+DTEND:20260604T104000Z
+SUMMARY:El comportamiento no consciente
+DESCRIPTION:Ponentes: Juan Manuel García\\n\\nHABLARÉ DE CÓMO EL CONOCIMIENTO DE CÓMO SE ENCUENTRA UNA PERSONA A TRAVÉS DE SU COMUNICACIÓN NO CONSCIENTE NOS PUEDE FACILITAR LA INFLUENCIA\, LA PERSUASIÓN\, LLEGANDO INCLUSO A PREVENIR ACTOS HOSTILES.
+LOCATION:Aula 6
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_105@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T094500Z
+DTEND:20260604T104000Z
+SUMMARY:El nuevo plan del Ministerio del Interior de ciberseguridad\, contra el cibercrimen y desiformación
+DESCRIPTION:Ponentes: Leandro Gobierno\\n\\nSe explicará de forma práctica y teórica el plan ministerial para afrontar los nuevos retos que se plantean en la ciberseguridad\, el cibercrimen y la desinformación publicado este 25 de mayo.
+LOCATION:Aula 3
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_262@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T094500Z
+DTEND:20260604T104000Z
+SUMMARY:ePol Patrol 2.0 - Interoperabilidad y movilidad: soluciones móviles para consultas en tiempo real
+DESCRIPTION:Ponentes: Oscar L Bajo\, Luis Manuel González\\n\\nHerramienta de movilidad estratégica diseñada para la consulta ágil y segura de personas y vehículos sobre el terreno\, garantizando la interoperabilidad y eficiencia de los medios humanos y materiales.
+LOCATION:Aula 10
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_102@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T094500Z
+DTEND:20260604T104000Z
+SUMMARY:Guerra Cognitiva: protección integral ante campañas de ciberinfluencia hostiles
+DESCRIPTION:Ponentes: Guillermo Barrón\\n\\nAnálisis y protección (contrainfluencia) ante procesos de ciberinfluencia y campañas informativas hostiles en ámbitos públicos y privados. Se incluye caso práctico y demostración técnica. 
+LOCATION:Aula 7
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_100@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T094500Z
+DTEND:20260604T104000Z
+SUMMARY:IA Operativa: cómo la IA nos facilita la vida investigando
+DESCRIPTION:Ponentes: Gabriel Cea\, Rodrigo Medrano\\n\\nPresentación de herramientas policiales para la investigación creadas con IA.
+LOCATION:Aula UCC 1
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_104@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T094500Z
+DTEND:20260604T104000Z
+SUMMARY:Protocolo Apocalipsis: cifrado y resiliencia en Redes LoRa
+DESCRIPTION:Ponentes: Ernesto Sanchez\\n\\n¿Redes caídas? Descubre cómo crear comunicaciones off-grid resilientes con LoRa y Meshtastic. Aprende a desplegar redes en malla autónomas\, seguras y cifradas con AES-256 ante crisis o catástrofes.
+LOCATION:Aula 4
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_101@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T094500Z
+DTEND:20260604T104000Z
+SUMMARY:Robótica y ¿ciberseguridad?
+DESCRIPTION:Ponentes: Adrián Campazas\\n\\nEsta charla abordará los riesgos de ciberseguridad en sistemas robóticos y su impacto en la sociedad. Se mostraran vulnerabilidad explotadas en robots reales para concienciar sobre estos riesgos.
+LOCATION:Aula 8
+END:VEVENT
+BEGIN:VEVENT
+UID:evento_288@congreso.local
+DTSTAMP:20260601T171354Z
+DTSTART:20260604T094500Z
+DTEND:20260604T104500Z
+SUMMARY:Taller de demostración del nuevo sistema de Enrolado de Detenidos - Personas PID 3.0 
+DESCRIPTION:Ponentes: Policía Nacional\\n\\n
+LOCATION:Aulas 3 y 4 de Informática
+END:VEVENT
+END:VCALENDAR
