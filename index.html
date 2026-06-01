@@ -958,6 +958,10 @@
         line-height: 1.25;
       }
 
+      .subtitle-place {
+        display: block;
+      }
+
       .summary-pill {
         display: none;
       }
@@ -983,13 +987,13 @@
       }
 
       .tabs {
-        position: sticky;
-        top: calc(118px + env(safe-area-inset-top));
+        position: fixed;
         left: 10px;
         right: 10px;
-        z-index: 45;
-        margin: 0 0 10px;
-        box-shadow: 0 8px 22px rgba(16, 24, 32, .18);
+        bottom: max(10px, env(safe-area-inset-bottom));
+        z-index: 80;
+        margin: 0;
+        box-shadow: 0 12px 28px rgba(16, 24, 32, .28);
       }
 
       .slot-title {
@@ -1010,7 +1014,7 @@
           <img class="logo" src="logo_26.png" alt="C1b3rwall 2026">
           <div>
             <h1>Agenda C1b3rwall 2026</h1>
-            <p class="subtitle">Cibercrimen 3.0 · 2, 3 y 4 de junio · Escuela Nacional de Policía</p>
+            <p class="subtitle"><span>Cibercrimen 3.0 · 2, 3 y 4 de junio</span><span class="subtitle-place">Escuela Nacional de Policía</span></p>
           </div>
         </div>
         <div class="brand-actions">
@@ -1832,7 +1836,10 @@
     }
 
     function formatDay(date) {
-      return new Intl.DateTimeFormat("es-ES", { weekday: "short", day: "numeric", month: "short", timeZone: TZ }).format(date).replace(".", "");
+      const parts = new Intl.DateTimeFormat("es-ES", { weekday: "short", day: "numeric", timeZone: TZ }).formatToParts(date);
+      const weekday = parts.find(part => part.type === "weekday")?.value.replace(".", "") || "";
+      const day = parts.find(part => part.type === "day")?.value || "";
+      return `${weekday} ${day}`;
     }
 
     function toIcsDate(date) {

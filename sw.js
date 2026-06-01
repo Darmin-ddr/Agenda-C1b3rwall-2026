@@ -1,4 +1,4 @@
-const CACHE_NAME = "ciberwall-agenda-v21";
+const CACHE_NAME = "ciberwall-agenda-v22";
 const ASSETS = [
   "./",
   "./index.html",
