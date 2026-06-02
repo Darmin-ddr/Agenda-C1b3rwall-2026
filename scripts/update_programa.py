@@ -133,10 +133,14 @@ def json_to_ics(sessions):
 
 def embed_ics(html, ics, timestamp):
     b64 = base64.b64encode(ics.encode("utf-8")).decode("ascii")
-    # Update base64 content and data-updated attribute
+
+    def replace_tag(m):
+        after_id = re.sub(r'\s*data-updated="[^"]*"', "", m.group(1))
+        return f'<script id="embeddedIcs"{after_id} data-updated="{timestamp}">{b64}</script>'
+
     new_html, n = re.subn(
-        r'<script([^>]+)id="embeddedIcs"([^>]*)>.*?(</script>)',
-        lambda m: f'<script{m.group(1)}id="embeddedIcs"{m.group(2)} data-updated="{timestamp}">{b64}{m.group(3)}',
+        r'<script\s+id="embeddedIcs"([^>]*)>.*?</script>',
+        replace_tag,
         html,
         flags=re.DOTALL,
     )
