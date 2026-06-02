@@ -135,12 +135,11 @@ def embed_ics(html, ics, timestamp):
     b64 = base64.b64encode(ics.encode("utf-8")).decode("ascii")
 
     def replace_tag(m):
-        attrs = m.group(1) + m.group(2)
-        attrs = re.sub(r'\s*data-updated="[^"]*"', "", attrs)
-        return f'<script{attrs} data-updated="{timestamp}">{b64}</script>'
+        after_id = re.sub(r'\s*data-updated="[^"]*"', "", m.group(1))
+        return f'<script id="embeddedIcs"{after_id} data-updated="{timestamp}">{b64}</script>'
 
     new_html, n = re.subn(
-        r'<script([^>]+)id="embeddedIcs"([^>]*)>.*?</script>',
+        r'<script\s+id="embeddedIcs"([^>]*)>.*?</script>',
         replace_tag,
         html,
         flags=re.DOTALL,
