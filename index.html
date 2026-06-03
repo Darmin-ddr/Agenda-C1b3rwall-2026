@@ -1879,11 +1879,11 @@
         const v2 = JSON.parse(v2raw);
         const selected = new Set();
         const pending = [];
-        for (const { u: uid, t: savedTitle } of v2) {
+        for (const { u: uid, t: savedTitle, ts } of v2) {
           if (uidToTitle.has(uid) && uidToTitle.get(uid) === savedTitle) {
             selected.add(uid);
           } else if (!uidToTitle.has(uid) && titleToEvents.has(savedTitle)) {
-            pending.push({ savedUid: uid, savedTitle, savedSlot: null, matches: titleToEvents.get(savedTitle) });
+            pending.push({ savedUid: uid, savedTitle, savedSlot: null, savedTs: ts || 0, matches: titleToEvents.get(savedTitle) });
           } else if (uidToTitle.has(uid)) {
             selected.add(uid);
           }
@@ -1918,7 +1918,21 @@
 
     function saveAgenda() {
       const uidToTitle = new Map(state.events.map(e => [e.uid, e.title]));
-      const v2 = [...state.selected].map(uid => ({ u: uid, t: uidToTitle.get(uid) || "" }));
+      const existing = new Map(
+        JSON.parse(localStorage.getItem(STORAGE_KEY_V2) || "[]").map(item => [item.u, item.ts || 0])
+      );
+      // When a restored talk gets a new UID, inherit the original timestamp
+      for (const { savedUid, savedTs, matches } of state.pendingMigrations) {
+        for (const e of matches) {
+          if (!existing.has(e.uid)) existing.set(e.uid, savedTs || existing.get(savedUid) || 0);
+        }
+      }
+      const now = Date.now();
+      const v2 = [...state.selected].map(uid => ({
+        u: uid,
+        t: uidToTitle.get(uid) || "",
+        ts: existing.get(uid) ?? now
+      }));
       localStorage.setItem(STORAGE_KEY_V2, JSON.stringify(v2));
       updateAgendaCount();
     }
