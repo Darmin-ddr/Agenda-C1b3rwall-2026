@@ -7,6 +7,7 @@ import re
 import json
 import sys
 import base64
+import hashlib
 import urllib.request
 from pathlib import Path
 
@@ -115,9 +116,10 @@ def json_to_ics(sessions):
             desc_parts.append(f"Consejos: {s['Consejos']}")
 
         desc_text = "\n\n".join(desc_parts)
+        uid_hash = hashlib.sha1(f"{titulo}|{dtstart}".encode()).hexdigest()[:10]
         lines += [
             "BEGIN:VEVENT",
-            f"UID:ciberwall2026-{i+1:03d}",
+            f"UID:cw26-{uid_hash}",
             f"DTSTART:{dtstart}",
             f"DTEND:{dtend}",
             f"SUMMARY:{esc(titulo)}",
