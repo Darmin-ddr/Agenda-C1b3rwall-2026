@@ -1357,7 +1357,9 @@
       state.events = events;
       loadAgenda(events);
       state.sourceLabel = `${label} · ${events.length} sesiones`;
-      state.day = "all";
+      const todayKey = formatDateKey(new Date());
+      const eventDays = new Set(events.map(e => e.dayKey));
+      state.day = eventDays.has(todayKey) ? todayKey : "all";
       state.room = "all";
       state.tag = "all";
       if (options.persist) localStorage.setItem(ICS_STORAGE_KEY, ics);
