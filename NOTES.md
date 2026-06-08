@@ -124,6 +124,20 @@ state.ponentes  // Map: normP(nombre) → ponente object
 
 ---
 
+## Despliegue — regla del Service Worker
+
+Cada vez que se hace push de cambios significativos a `main` hay que **incrementar el número de versión** en `sw.js`:
+
+```js
+const CACHE_NAME = "ciberwall-agenda-v26"; // ← subir este número
+```
+
+Si no se hace, los usuarios que tienen la PWA instalada siguen viendo la versión antigua cacheada aunque GitHub Pages ya sirva la nueva. Un hard refresh (`Ctrl+Shift+R`) o incógnito lo fuerza en el navegador, pero los usuarios normales no lo harán.
+
+**Cuándo es obligatorio:** al cambiar `index.html`, `sw.js` o cualquier asset listado en `ASSETS`. No hace falta para cambios solo en scripts de Python o el workflow.
+
+---
+
 ## Cierre de edición
 
 Al terminar el congreso, `main` pasa a servir una **página de agradecimiento** estática (`index.html` simplificado) que mantiene el estilo Ciberwall (logo, colores, tema claro/oscuro) con el mensaje "¡Gracias por estar en C1b3rwall 2026!" y "¡Nos vemos en C1b3rwall 2027!" en turquesa.
