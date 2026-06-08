@@ -1,6 +1,6 @@
 // IMPORTANTE: incrementar este número en cada despliegue significativo
 // para que los usuarios con la PWA instalada descarguen la versión nueva.
-const CACHE_NAME = "ciberwall-agenda-v28";
+const CACHE_NAME = "ciberwall-agenda-v29";
 const ASSETS = [
   "./",
   "./index.html",
