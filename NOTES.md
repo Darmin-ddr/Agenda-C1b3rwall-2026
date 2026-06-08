@@ -179,8 +179,31 @@ scripts/
 
 ## Lista de tareas para 2027
 
+### App y datos
 - [ ] Cambiar `YEAR = "2026"` a `"2027"` en `update_programa.py` y `fetch_ponentes.py`
 - [ ] Reactivar el `schedule` (cron) en `.github/workflows/update-programa.yml`
-- [ ] Restaurar `main` desde `feature/ponentes` (o mergear)
+- [ ] Restaurar `main` desde `feature/ponentes` (o mergear); eliminar overlay de agradecimiento 2026
 - [ ] Actualizar textos hardcodeados: fechas del congreso, título, descripción, mensaje del restore banner
-- [ ] Bump de la versión del Service Worker (`sw.js`) para forzar actualización de caché en usuarios que tuvieran la app instalada
+- [ ] Bump de la versión del Service Worker (`sw.js`) para forzar actualización de caché
+
+### PWA — instalación y notificaciones push
+La app es **no oficial**, así que la distribución es solo vía web (sin App Store ni Play Store).
+El objetivo es maximizar la tasa de instalación como PWA y añadir notificaciones push.
+
+- [ ] **Banner de instalación personalizado**
+  - Android/Chrome: interceptar el evento `beforeinstallprompt`, guardarlo y mostrar un banner
+    propio con contexto ("Instala la app para recibir avisos de tus charlas") en lugar del prompt genérico del navegador.
+  - iOS/Safari: no hay evento automático. Detectar `navigator.standalone === false` en Safari iOS
+    y mostrar un tooltip/modal con instrucciones: "Pulsa Share (⬆) → Añadir a pantalla de inicio".
+  - Guardar en localStorage si el usuario ya instaló o descartó el banner para no volver a mostrarlo.
+
+- [ ] **Push notifications**
+  - El Service Worker ya existe — solo hay que añadir el handler de `push`.
+  - Usar **OneSignal** (plan gratuito): gestiona suscripciones, VAPID keys y el panel de envío
+    sin necesidad de backend propio. SDK de unas pocas líneas en el SW y en el HTML.
+  - Casos de uso: "Tu charla empieza en 15 minutos", "Cambio de aula en una charla guardada".
+  - El envío de notificaciones se haría manualmente desde el panel de OneSignal durante el congreso.
+
+- [ ] **Icono PWA**
+  - Revisar `icon.svg` y `logo_26.png` para que queden bien en pantalla de inicio en iOS y Android
+    (fondo opaco, padding suficiente, tamaños 192×192 y 512×512 en `manifest.webmanifest`).
