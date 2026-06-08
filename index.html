@@ -5183,7 +5183,7 @@
             const ev = findEventByTalk(t);
             if (!ev) return;
             document.getElementById("speakerDialog").close();
-            showDetail(ev);
+            showDetail(ev.uid);
           });
 
           talksEl.appendChild(item);
