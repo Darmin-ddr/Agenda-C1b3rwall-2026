@@ -1,9 +1,7 @@
 name: Actualizar programa C1b3rwall
 
 on:
-  schedule:
-    - cron: '*/15 * * * *'  # cada 15 minutos
-  workflow_dispatch:          # también ejecutable manualmente
+  workflow_dispatch:  # solo manual — congreso finalizado
 
 permissions:
   contents: write
