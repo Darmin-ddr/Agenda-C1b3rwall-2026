@@ -2786,6 +2786,8 @@
 
       selected: new Set(),
 
+      activeSpeaker: null,
+
       pendingMigrations: [],
 
       sourceLabel: "Programa incluido en el HTML",
@@ -2967,6 +2969,14 @@
       els.dialog.addEventListener("click", event => {
 
         if (event.target === els.dialog) els.dialog.close();
+
+      });
+
+      els.dialog.addEventListener("close", () => {
+
+        const speakerDialog = document.getElementById("speakerDialog");
+
+        if (speakerDialog.open && state.activeSpeaker) refreshSpeakerTalks(state.activeSpeaker);
 
       });
 
@@ -5115,47 +5125,7 @@
       );
     }
 
-    function showSpeaker(id) {
-
-      const p = [...state.ponentes.values()].find(x => x.id === id);
-
-      if (!p) return;
-
-
-
-      const photoWrap = document.getElementById("speakerPhoto");
-
-      photoWrap.innerHTML = "";
-
-      if (p.foto) {
-
-        const img = document.createElement("img");
-
-        img.className = "speaker-dialog-photo";
-
-        img.src = p.foto;
-
-        img.alt = p.nombre;
-
-        img.onerror = () => { img.replaceWith(makeSpeakerInit(p.nombre)); };
-
-        photoWrap.appendChild(img);
-
-      } else {
-
-        photoWrap.appendChild(makeSpeakerInit(p.nombre));
-
-      }
-
-
-
-      document.getElementById("speakerName").textContent = p.nombre;
-
-      document.getElementById("speakerOrg").textContent = p.org || "";
-
-      document.getElementById("speakerBio").textContent = p.bio || "";
-
-
+    function refreshSpeakerTalks(p) {
 
       const talksLabel = document.getElementById("speakerTalksLabel");
 
@@ -5165,15 +5135,13 @@
 
       const charlas = p.charlas || [];
 
-
-
       if (charlas.length) {
 
         talksLabel.textContent = charlas.length === 1 ? "Charla" : "Charlas";
 
         for (const t of charlas) {
 
-          const ev      = findEventByTalk(t);
+          const ev       = findEventByTalk(t);
           const sel      = ev && state.selected.has(ev.uid);
           const conflict = sel && findConflicts(ev).length > 0;
 
@@ -5202,7 +5170,47 @@
 
       }
 
+    }
 
+    function showSpeaker(id) {
+
+      const p = [...state.ponentes.values()].find(x => x.id === id);
+
+      if (!p) return;
+
+      state.activeSpeaker = p;
+
+      const photoWrap = document.getElementById("speakerPhoto");
+
+      photoWrap.innerHTML = "";
+
+      if (p.foto) {
+
+        const img = document.createElement("img");
+
+        img.className = "speaker-dialog-photo";
+
+        img.src = p.foto;
+
+        img.alt = p.nombre;
+
+        img.onerror = () => { img.replaceWith(makeSpeakerInit(p.nombre)); };
+
+        photoWrap.appendChild(img);
+
+      } else {
+
+        photoWrap.appendChild(makeSpeakerInit(p.nombre));
+
+      }
+
+      document.getElementById("speakerName").textContent = p.nombre;
+
+      document.getElementById("speakerOrg").textContent = p.org || "";
+
+      document.getElementById("speakerBio").textContent = p.bio || "";
+
+      refreshSpeakerTalks(p);
 
       const dialog = document.getElementById("speakerDialog");
 
@@ -5233,6 +5241,8 @@
       document.getElementById("speakerClose").addEventListener("click", () => dialog.close());
 
       dialog.addEventListener("click", e => { if (e.target === dialog) dialog.close(); });
+
+      dialog.addEventListener("close", () => { state.activeSpeaker = null; });
 
     }
 
