@@ -1,83 +1,172 @@
-# Agenda C1b3rwall 2026 — Notas del proyecto
+# Agenda C1b3rwall — Notas del proyecto
 
-App web PWA de una sola página (`index.html`) para consultar el programa del Congreso C1b3rwall 2026. Publicada en GitHub Pages.
+App web PWA de una sola página (`index.html`) para consultar el programa del Congreso C1b3rwall. Publicada en GitHub Pages.
 
 ---
 
-## Arquitectura
+## Arquitectura general
 
-Todo el programa viaja embebido dentro del propio `index.html` como un bloque ICS en base64:
+Todo el contenido dinámico viaja **embebido dentro del propio `index.html`** — no hay llamadas externas en runtime. Funciona offline desde la primera carga (PWA con Service Worker).
+
+Hay dos bloques embebidos:
 
 ```html
+<!-- Programa: ICS en base64 -->
 <script id="embeddedIcs" type="application/octet-stream"
         data-encoding="base64" data-updated="01/06/2026 | 18:52">
-  BASE64_DEL_ICS...
+  BASE64...
+</script>
+
+<!-- Ponentes: JSON compacto -->
+<script id="embeddedPonentes" type="application/json">
+  [{"id":"...","nombre":"...","foto":"...","bio":"...","org":"...","charlas":[...]},...]
 </script>
 ```
 
-La app lee ese bloque al arrancar, lo parsea y construye la interfaz. No hace llamadas externas en runtime — funciona offline una vez cargada (PWA con Service Worker).
+La app lee ambos bloques al arrancar (`loadEventsFromIcs` y `loadPonentes`), los parsea y construye la interfaz.
+
+**Por qué embebido y no fetch:** permite abrir `index.html` directamente sin servidor, funciona offline sin Service Worker activo, y simplifica el despliegue (un solo fichero).
+
+**Gotcha al embeber JSON con regex:** usar siempre lambda como reemplazo en `re.subn` para evitar que los `\n` del JSON se conviertan en saltos de línea literales:
+```python
+re.subn(pattern, lambda _: tag, html, flags=re.DOTALL)
+```
 
 ---
 
-## Auto-update del programa
-
-El programa oficial se actualiza en `c1b3rwall.policia.es`. Para mantener la app sincronizada automáticamente hay un pipeline en GitHub Actions.
-
-### Fuentes de datos
+## Fuentes de datos
 
 | Recurso | URL |
 |---|---|
 | Página del congreso (timestamp) | `https://c1b3rwall.policia.es/congreso` |
 | JSON de ponencias | `https://c1b3rwall.policia.es/content/congreso/2026/ponencias_json.json` |
+| JSON de ponentes | `https://c1b3rwall.policia.es/content/congreso/2026/ponentes_json.json` |
 
-El JSON contiene ~294 sesiones con los campos: `Día`, `Hora`, `Ubicación`, `Actividad`, `Idioma`, `Dificultad`, `Título`, `Restricción`, `Descripción`, `Consejos`, `Ponentes[]`.
+Estas URLs se descubrieron inspeccionando las peticiones de red del sitio oficial desde la consola del navegador (`fetch('/content/congreso/2026/ponencias_json.json').then(r=>r.json()).then(console.log)`). El patrón de URL llevó a deducir el endpoint de ponentes.
 
-### Flujo cada 15 minutos
+### Estructura del JSON de ponencias (~294 sesiones)
+Campos por sesión: `Día`, `Hora`, `Ubicación`, `Actividad`, `Idioma`, `Dificultad`, `Título`, `Restricción`, `Descripción`, `Consejos`, `Ponentes[]` (array con `{Nombre, ID, Foto}`).
 
-1. **`scripts/update_programa.py`** hace fetch de `/congreso` y extrae el texto `"Actualizado a DD/MM/YYYY | HH:MM horas"` del bloque Programa.
-2. Compara ese timestamp con el guardado en `.last-program-update`.
-3. Si **no cambió** → termina sin tocar nada.
-4. Si **cambió** → descarga el JSON, convierte a ICS (horarios a UTC, CEST = UTC+2), embebe el ICS en base64 en `index.html` y escribe el timestamp como atributo `data-updated`.
-5. **`.github/workflows/update-programa.yml`** hace commit + push a `main`.
-6. GitHub Pages republica la web automáticamente.
+### Estructura del JSON de ponentes (~280 entradas)
+Campos: `Nombre`, `ID`, `Foto` (ruta relativa `/img/ponentes_2026/{ID}.jpg`), `Biografía`, `Organización`. Los campos `Cargo`, `Email`, `Linkedin` y `Web` estaban vacíos en 2026.
+
+### Cruce ponente ↔ charla
+El JSON de ponencias incluye `Ponentes[].Nombre` por sesión. El cruce con el JSON de ponentes se hace por **nombre normalizado** (minúsculas, sin tildes, sin espacios) porque los IDs no son consistentes entre los dos endpoints. Resultado en 2026: 319 de 337 ponentes con charlas vinculadas.
+
+---
+
+## Auto-update (pipeline GitHub Actions)
+
+### Flujo
+
+1. `scripts/update_programa.py` hace fetch de `/congreso` y extrae `"Actualizado a DD/MM/YYYY | HH:MM horas"`.
+2. Compara con `.last-program-update`. Si cambió el programa → regenera el ICS y lo embebe en `index.html`.
+3. Hace fetch de `ponentes_json.json`, calcula su SHA1 y compara con `.last-ponentes-hash`. Si cambió → regenera `ponentes.json` mergeado y lo embebe en `index.html`.
+4. Si hubo cualquier cambio → el workflow hace commit + push a `main` → GitHub Pages republica.
+
+El cron está **desactivado** tras el congreso de 2026 (solo `workflow_dispatch` manual). Para 2027: reactivar el `schedule` en el workflow.
+
+### Detección de cambios
+- **Programa**: timestamp textual extraído del HTML de `/congreso`.
+- **Ponentes**: hash SHA1 del JSON crudo — no tiene timestamp propio.
 
 ### Configuración necesaria en GitHub
-
-En **Settings → Actions → General → Workflow permissions**: marcar **"Read and write permissions"** para que el workflow pueda hacer push.
-
-El workflow también tiene `workflow_dispatch`, así que se puede lanzar manualmente desde la pestaña Actions sin esperar al cron.
+En **Settings → Actions → General → Workflow permissions**: marcar **"Read and write permissions"**.
 
 ---
 
-## Cambios de UI realizados
+## Scripts de utilidad
 
-### Barra de navegación móvil
-- En móvil la barra `Programa / Mi agenda / Parrilla / Ahora` es `position: fixed` en la parte inferior.
-- **Problema original**: fondo casi idéntico al de la página → se perdía visualmente.
-- **Fix**: fondo blanco opaco en claro (`rgba(255,255,255,.97)`), azul oscuro más claro en oscuro (`rgba(26,40,57,.97)`), borde superior con tinte brand, sombra redirigida hacia arriba (`0 -6px 24px`).
+### `scripts/update_programa.py`
+Script principal que ejecuta el pipeline completo (programa + ponentes). Usado por el workflow de GitHub Actions.
 
-### Stats
-- **Antes**: tres pills separados `"X sesiones visibles"` / `"X aulas"` / `"X en mi agenda aquí"` en flex-wrap → wrapping en pantallas pequeñas.
-- **Ahora**: una sola línea `"X sesiones · X aulas · X en agenda"`.
-
-### Botón de tema
-- **Antes**: menú hamburguesa con panel desplegable (tema + importar ICS).
-- **Ahora**: botón simple ☾/☀ que alterna claro/oscuro. El tema se persiste en `localStorage`.
-
-### Timestamp de actualización
-- Línea pequeña centrada bajo las stats: `"Datos actualizados: DD/MM/YYYY | HH:MM"`.
-- El valor es el timestamp de publicación de la organización, no la hora del cron.
-- La app lo lee del atributo `data-updated` del tag `#embeddedIcs`.
+### `scripts/fetch_ponentes.py`
+Script standalone para regenerar y embeber los ponentes manualmente:
+```
+python scripts/fetch_ponentes.py
+```
+Útil para actualizar ponentes sin tocar el programa, o para preparar la siguiente edición.
 
 ---
 
-## Estructura de ficheros relevantes
+## Estructura de la app (rama `feature/ponentes`)
+
+### Vistas / pestañas
+| Pestaña | Descripción |
+|---|---|
+| Programa | Lista de charlas agrupadas por franja horaria, filtrable |
+| Mi agenda | Charlas guardadas por el usuario |
+| Parrilla | Vista de calendario por aula y hora |
+| Ahora | Charlas en curso y próximas |
+| **Ponentes** | Grid de ponentes con búsqueda por nombre/organización |
+
+### Ponentes — integración UI
+
+**Grid de ponentes** (`renderPonentes`):
+- Grid responsive con tarjetas de foto cuadrada + nombre + organización en turquesa.
+- Búsqueda integrada en el buscador principal del topbar (filtra por nombre y organización cuando la vista activa es "ponentes").
+- Los filtros de día/aula se ocultan automáticamente en esta vista.
+
+**Chips de ponente en tarjetas de charla** (`speakerChipsHtml`):
+- Cada charla muestra chips `[foto circular · nombre]` por ponente.
+- Aparecen en: tarjetas del programa, tarjetas de agenda, modal de detalles.
+- Al clicar un chip se abre la ficha del ponente (independientemente de dónde esté el chip).
+- Fallback a iniciales con gradiente brand→accent si la foto no carga (`speakerThumbErr`).
+
+**Ficha de ponente** (`showSpeaker`):
+- Modal con foto, nombre, organización, bio y lista de sus charlas (día, hora, aula).
+
+### Estado de ponentes en `state`
+```javascript
+state.ponentes  // Map: normP(nombre) → ponente object
+```
+`normP(s)` = minúsculas + sin tildes (NFD) + sin espacios. Es la clave de cruce con los nombres que vienen del ICS.
+
+---
+
+## Cierre de edición
+
+Al terminar el congreso, `main` pasa a servir una **página de agradecimiento** estática (`index.html` simplificado) que mantiene el estilo Ciberwall (logo, colores, tema claro/oscuro) con el mensaje "¡Gracias por estar en C1b3rwall 2026!" y "¡Nos vemos en C1b3rwall 2027!" en turquesa.
+
+El workflow queda con solo `workflow_dispatch` (sin cron) hasta la próxima edición.
+
+---
+
+## Cambios de UI históricos (2026)
+
+- **Barra de navegación móvil**: `position: fixed` en la parte inferior, fondo opaco con borde y sombra hacia arriba para que destaque sobre el contenido.
+- **Stats**: condensado a una sola línea `"X sesiones · X aulas · X en agenda"` (antes tres pills separados).
+- **Botón de tema**: botón simple ☾/☀ en el topbar (antes menú hamburguesa desplegable).
+- **Timestamp de actualización**: línea pequeña bajo las stats con la hora de publicación oficial (no la del cron).
+
+---
+
+## Estructura de ficheros
 
 ```
-index.html                          — App completa (CSS + HTML + JS + ICS embebido)
-sw.js                               — Service Worker para PWA / offline
-manifest.webmanifest                — Metadatos PWA
-scripts/update_programa.py          — Script de actualización automática
-.github/workflows/update-programa.yml — Workflow de GitHub Actions (cron 15 min)
-.last-program-update                — Timestamp del último programa procesado
+index.html                             — App completa o página de cierre (según rama/momento)
+sw.js                                  — Service Worker (PWA / offline)
+manifest.webmanifest                   — Metadatos PWA
+ponentes_test.html                     — Prototipo standalone de la vista de ponentes
+scripts/
+  update_programa.py                   — Pipeline completo (programa + ponentes)
+  fetch_ponentes.py                    — Regenerar/embeber ponentes manualmente
+.github/workflows/
+  update-programa.yml                  — GitHub Actions (cron desactivado tras congreso)
+.last-program-update                   — Timestamp del último programa procesado
+.last-ponentes-hash                    — SHA1 del último JSON de ponentes procesado
 ```
+
+### Ramas
+- `main` — página de agradecimiento (publicada en GitHub Pages)
+- `feature/ponentes` — app completa con pestaña de ponentes (base para 2027)
+
+---
+
+## Lista de tareas para 2027
+
+- [ ] Cambiar `YEAR = "2026"` a `"2027"` en `update_programa.py` y `fetch_ponentes.py`
+- [ ] Reactivar el `schedule` (cron) en `.github/workflows/update-programa.yml`
+- [ ] Restaurar `main` desde `feature/ponentes` (o mergear)
+- [ ] Actualizar textos hardcodeados: fechas del congreso, título, descripción, mensaje del restore banner
+- [ ] Bump de la versión del Service Worker (`sw.js`) para forzar actualización de caché en usuarios que tuvieran la app instalada
