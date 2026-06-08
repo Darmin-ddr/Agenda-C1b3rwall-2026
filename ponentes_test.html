@@ -1,0 +1,739 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Ponentes C1b3rwall 2026 — Prototipo</title>
+  <style>
+    :root {
+      --px: clamp(12px, 2.5vw, 56px);
+      color-scheme: light;
+      --bg: #f5f7fb;
+      --panel: #ffffff;
+      --panel-2: #eef3f8;
+      --text: #101820;
+      --muted: #607083;
+      --line: #d9e2ec;
+      --brand: #005a8d;
+      --brand-2: #003c5f;
+      --accent: #18a999;
+      --shadow: 0 12px 34px rgba(16, 24, 32, .12);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    :root[data-theme="dark"] {
+      color-scheme: dark;
+      --bg: #0c1117;
+      --panel: #141b24;
+      --panel-2: #1d2834;
+      --text: #eef4fb;
+      --muted: #9db0c4;
+      --line: #2c3a49;
+      --brand: #39a7dc;
+      --brand-2: #8ed8ff;
+      --accent: #25d0bb;
+      --shadow: 0 12px 34px rgba(0, 0, 0, .36);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at top left, rgba(24, 169, 153, .18), transparent 30rem),
+        linear-gradient(180deg, #ecf2f8 0%, var(--bg) 30rem);
+      color: var(--text);
+    }
+
+    :root[data-theme="dark"] body {
+      background:
+        radial-gradient(circle at top left, rgba(57, 167, 220, .18), transparent 30rem),
+        linear-gradient(180deg, #111b25 0%, var(--bg) 30rem);
+    }
+
+    button { border: 0; cursor: pointer; font: inherit; }
+
+    /* ── Topbar ── */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 60;
+      padding: calc(12px + env(safe-area-inset-top)) var(--px) 12px;
+      background: rgba(245, 247, 251, .92);
+      border-bottom: 1px solid rgba(217, 226, 236, .84);
+      backdrop-filter: blur(14px);
+    }
+
+    :root[data-theme="dark"] .topbar {
+      background: rgba(12, 17, 23, .9);
+      border-bottom-color: rgba(44, 58, 73, .84);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .brand-mark { display: flex; align-items: center; gap: 10px; min-width: 0; }
+
+    .logo {
+      display: block;
+      width: 52px; height: 52px;
+      flex: 0 0 auto;
+      border-radius: 8px;
+      object-fit: contain;
+      background: var(--panel);
+      box-shadow: 0 6px 16px rgba(16, 24, 32, .1);
+    }
+
+    h1 { font-size: 1.08rem; line-height: 1.15; }
+
+    .subtitle { margin: 2px 0 0; color: var(--muted); font-size: .86rem; }
+
+    .topbar-actions { display: flex; align-items: center; gap: 8px; }
+
+    .count-pill {
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--panel);
+      color: var(--brand-2);
+      font-size: .82rem;
+      font-weight: 700;
+      box-shadow: 0 4px 12px rgba(16, 24, 32, .08);
+      white-space: nowrap;
+    }
+
+    .icon-btn {
+      display: flex;
+      align-items: center; justify-content: center;
+      width: 38px; height: 38px;
+      border-radius: 8px;
+      background: var(--panel);
+      box-shadow: 0 4px 12px rgba(16, 24, 32, .08);
+      color: var(--text);
+      font-size: 1rem;
+    }
+
+    .icon-btn:hover { background: var(--panel-2); }
+
+    .searchbox {
+      position: relative;
+    }
+
+    .searchbox input {
+      display: block;
+      width: 100%;
+      min-height: 44px;
+      padding: 0 36px 0 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      color: var(--text);
+      font: inherit;
+      font-size: .95rem;
+      outline: none;
+      box-shadow: 0 4px 12px rgba(16, 24, 32, .05);
+    }
+
+    .searchbox input:focus {
+      border-color: var(--brand);
+      box-shadow: 0 0 0 3px rgba(0, 90, 141, .16);
+    }
+
+    .clear-btn {
+      position: absolute;
+      right: 8px; top: 50%;
+      transform: translateY(-50%);
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      background: var(--panel-2);
+      color: var(--muted);
+      font-size: 1rem;
+      display: flex; align-items: center; justify-content: center;
+    }
+
+    .clear-btn:hover { background: var(--line); }
+    .clear-btn[hidden] { display: none; }
+
+    /* ── Main ── */
+    .main {
+      padding: 20px var(--px) 40px;
+    }
+
+    /* ── Loading / Error ── */
+    .status {
+      padding: 48px 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    /* ── Grid ── */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 14px;
+    }
+
+    @media (min-width: 640px) {
+      .grid { grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); }
+    }
+
+    /* ── Card ── */
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(16, 24, 32, .07);
+      cursor: pointer;
+      transition: transform .15s, box-shadow .15s;
+      text-align: left;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 28px rgba(16, 24, 32, .13);
+    }
+
+    .card-photo {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      background: var(--panel-2);
+      display: block;
+    }
+
+    .card-photo-fallback {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      background: linear-gradient(135deg, var(--brand) 0%, var(--accent) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: -.02em;
+    }
+
+    .card-body {
+      padding: 10px 12px 12px;
+    }
+
+    .card-name {
+      font-size: .88rem;
+      font-weight: 700;
+      line-height: 1.3;
+      color: var(--text);
+      margin-bottom: 3px;
+    }
+
+    .card-org {
+      font-size: .76rem;
+      color: var(--accent);
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .card-talks-count {
+      margin-top: 6px;
+      font-size: .72rem;
+      color: var(--muted);
+    }
+
+    .card[hidden] { display: none; }
+
+    /* ── Empty state ── */
+    .empty {
+      grid-column: 1 / -1;
+      padding: 48px 0;
+      text-align: center;
+      color: var(--muted);
+    }
+
+    /* ── Modal overlay ── */
+    dialog {
+      border: none;
+      padding: 0;
+      border-radius: 16px;
+      background: var(--panel);
+      box-shadow: 0 24px 64px rgba(0, 0, 0, .25);
+      max-width: 680px;
+      width: calc(100vw - 32px);
+      max-height: calc(100vh - 48px);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    dialog::backdrop {
+      background: rgba(10, 16, 24, .55);
+      backdrop-filter: blur(4px);
+    }
+
+    .modal-scroll {
+      overflow-y: auto;
+      flex: 1;
+    }
+
+    .modal-header {
+      display: flex;
+      gap: 20px;
+      padding: 24px 24px 20px;
+      border-bottom: 1px solid var(--line);
+      align-items: flex-start;
+    }
+
+    .modal-photo {
+      width: 88px;
+      height: 88px;
+      border-radius: 12px;
+      object-fit: cover;
+      background: var(--panel-2);
+      flex: 0 0 auto;
+    }
+
+    .modal-photo-fallback {
+      width: 88px;
+      height: 88px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--brand) 0%, var(--accent) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #fff;
+      flex: 0 0 auto;
+    }
+
+    .modal-meta { flex: 1; min-width: 0; }
+
+    .modal-name {
+      font-size: 1.15rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 4px;
+    }
+
+    .modal-org {
+      font-size: .88rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    .modal-close {
+      flex: 0 0 auto;
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      background: var(--panel-2);
+      color: var(--muted);
+      font-size: 1.1rem;
+      display: flex; align-items: center; justify-content: center;
+      margin-left: auto;
+    }
+
+    .modal-close:hover { background: var(--line); }
+
+    .modal-body {
+      padding: 20px 24px 24px;
+    }
+
+    .modal-bio {
+      font-size: .9rem;
+      line-height: 1.65;
+      color: var(--text);
+      margin-bottom: 20px;
+    }
+
+    .modal-bio:empty { display: none; }
+
+    .modal-talks-title {
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    .modal-talks-title:empty { display: none; }
+
+    .talk-item {
+      padding: 12px 14px;
+      border-radius: 10px;
+      background: var(--panel-2);
+      border: 1px solid var(--line);
+      margin-bottom: 8px;
+    }
+
+    .talk-title {
+      font-size: .88rem;
+      font-weight: 600;
+      line-height: 1.35;
+      margin-bottom: 5px;
+      color: var(--text);
+    }
+
+    .talk-meta {
+      font-size: .76rem;
+      color: var(--muted);
+    }
+
+    .talk-restricted {
+      display: inline-block;
+      font-size: .68rem;
+      font-weight: 700;
+      padding: 1px 6px;
+      border-radius: 4px;
+      background: rgba(188, 108, 37, .12);
+      color: #bc6c25;
+      margin-left: 4px;
+      vertical-align: middle;
+    }
+
+    :root[data-theme="dark"] .talk-restricted {
+      background: rgba(242, 166, 90, .15);
+      color: #f2a65a;
+    }
+
+    .no-talks {
+      font-size: .88rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">
+        <img class="logo" src="logo_26.png" alt="C1b3rwall 2026">
+        <div>
+          <h1>Ponentes C1b3rwall 2026</h1>
+          <p class="subtitle">Prototipo · datos reales</p>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <span class="count-pill" id="count">…</span>
+        <button class="icon-btn" id="themeBtn" type="button" aria-label="Cambiar tema">☀</button>
+      </div>
+    </div>
+    <div class="searchbox">
+      <input id="search" type="search" placeholder="Nombre, organización…" autocomplete="off">
+      <button class="clear-btn" id="clearBtn" type="button" hidden>×</button>
+    </div>
+  </header>
+
+  <main class="main">
+    <div id="status" class="status">Cargando ponentes…</div>
+    <div class="grid" id="grid" hidden></div>
+  </main>
+
+  <dialog id="dialog">
+    <div class="modal-scroll">
+      <div class="modal-header">
+        <div id="modalPhoto"></div>
+        <div class="modal-meta">
+          <p class="modal-name" id="modalName"></p>
+          <p class="modal-org" id="modalOrg"></p>
+        </div>
+        <button class="modal-close" id="modalClose" type="button">×</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-bio" id="modalBio"></p>
+        <p class="modal-talks-title" id="modalTalksTitle"></p>
+        <div id="modalTalks"></div>
+      </div>
+    </div>
+  </dialog>
+
+  <script>
+    const PONENTES_URL  = "https://c1b3rwall.policia.es/content/congreso/2026/ponentes_json.json";
+    const PONENCIAS_URL = "https://c1b3rwall.policia.es/content/congreso/2026/ponencias_json.json";
+    const BASE_IMG      = "https://c1b3rwall.policia.es";
+
+    let allPonentes = [];
+
+    // ── Helpers ──────────────────────────────────────────────────────────────
+
+    function norm(s) {
+      return (s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/\s+/g, "");
+    }
+
+    function initials(name) {
+      return name.split(/\s+/).slice(0, 2).map(w => w[0]).join("").toUpperCase();
+    }
+
+    function imgEl(foto, name, cls) {
+      if (foto) {
+        const img = document.createElement("img");
+        img.src = foto;
+        img.alt = name;
+        img.className = cls;
+        img.onerror = () => {
+          const fb = fallbackEl(name, cls.replace("photo", "photo-fallback"));
+          img.replaceWith(fb);
+        };
+        return img;
+      }
+      return fallbackEl(name, cls.replace("photo", "photo-fallback"));
+    }
+
+    function fallbackEl(name, cls) {
+      const div = document.createElement("div");
+      div.className = cls;
+      div.textContent = initials(name);
+      return div;
+    }
+
+    // ── Data loading ──────────────────────────────────────────────────────────
+
+    async function loadData() {
+      // Try local ponentes.json first (generated by fetch_ponentes.py)
+      try {
+        const r = await fetch("ponentes.json");
+        if (r.ok) {
+          const data = await r.json();
+          console.info("Cargado desde ponentes.json local");
+          return data;
+        }
+      } catch {}
+
+      // Fallback: fetch and merge live from official API
+      const [ponentesRaw, ponencias] = await Promise.all([
+        fetch(PONENTES_URL).then(r => r.json()),
+        fetch(PONENCIAS_URL).then(r => r.json()),
+      ]);
+
+      const byName = Object.fromEntries(ponentesRaw.map(p => [norm(p.Nombre), p]));
+
+      const talksByName = {};
+      for (const sesion of ponencias) {
+        for (const sp of sesion.Ponentes || []) {
+          const key = norm(sp.Nombre);
+          (talksByName[key] ??= []).push({
+            titulo:     sesion["Título"] || "",
+            dia:        sesion["Día"] || "",
+            hora:       sesion["Hora"] || "",
+            aula:       sesion["Ubicación"] || "",
+            actividad:  sesion["Actividad"] || "",
+            restriccion: sesion["Restricción"] || "",
+          });
+        }
+      }
+
+      const result = [];
+      const seen = new Set();
+
+      for (const p of ponentesRaw) {
+        const key = norm(p.Nombre);
+        seen.add(key);
+        result.push({
+          id: p.ID, nombre: p.Nombre,
+          foto: p.Foto ? BASE_IMG + p.Foto : "",
+          bio: p.Biografía || "", org: p.Organización || "",
+          charlas: talksByName[key] || [],
+        });
+      }
+
+      const extraSeen = new Set();
+      for (const sesion of ponencias) {
+        for (const sp of sesion.Ponentes || []) {
+          const key = norm(sp.Nombre);
+          if (seen.has(key) || extraSeen.has(key)) continue;
+          extraSeen.add(key);
+          result.push({
+            id: sp.ID, nombre: sp.Nombre,
+            foto: sp.Foto ? BASE_IMG + sp.Foto : "",
+            bio: "", org: "",
+            charlas: talksByName[key] || [],
+          });
+        }
+      }
+
+      result.sort((a, b) => norm(a.nombre).localeCompare(norm(b.nombre)));
+      return result;
+    }
+
+    // ── Render ────────────────────────────────────────────────────────────────
+
+    function renderGrid(ponentes) {
+      const grid = document.getElementById("grid");
+      grid.innerHTML = "";
+
+      for (const p of ponentes) {
+        const card = document.createElement("article");
+        card.className = "card";
+        card.dataset.key = norm(p.nombre) + " " + norm(p.org);
+
+        const photoWrap = imgEl(p.foto, p.nombre, "card-photo");
+        card.appendChild(photoWrap);
+
+        const body = document.createElement("div");
+        body.className = "card-body";
+
+        const name = document.createElement("p");
+        name.className = "card-name";
+        name.textContent = p.nombre;
+        body.appendChild(name);
+
+        if (p.org) {
+          const org = document.createElement("p");
+          org.className = "card-org";
+          org.textContent = p.org;
+          body.appendChild(org);
+        }
+
+        if (p.charlas.length) {
+          const cnt = document.createElement("p");
+          cnt.className = "card-talks-count";
+          cnt.textContent = p.charlas.length === 1 ? "1 charla" : `${p.charlas.length} charlas`;
+          body.appendChild(cnt);
+        }
+
+        card.appendChild(body);
+        card.addEventListener("click", () => openModal(p));
+        grid.appendChild(card);
+      }
+
+      return grid;
+    }
+
+    function updateCount(visible, total) {
+      const el = document.getElementById("count");
+      el.textContent = visible === total ? `${total} ponentes` : `${visible} de ${total}`;
+    }
+
+    // ── Search ────────────────────────────────────────────────────────────────
+
+    function applySearch(query) {
+      const q = norm(query);
+      const cards = document.querySelectorAll(".card");
+      let visible = 0;
+      cards.forEach(card => {
+        const match = !q || card.dataset.key.includes(q);
+        card.hidden = !match;
+        if (match) visible++;
+      });
+
+      let empty = document.querySelector(".empty");
+      if (!visible) {
+        if (!empty) {
+          empty = document.createElement("p");
+          empty.className = "empty";
+          document.getElementById("grid").appendChild(empty);
+        }
+        empty.textContent = `Sin resultados para "${query}"`;
+      } else {
+        empty?.remove();
+      }
+
+      updateCount(visible, allPonentes.length);
+      document.getElementById("clearBtn").hidden = !query;
+    }
+
+    // ── Modal ─────────────────────────────────────────────────────────────────
+
+    function openModal(p) {
+      const dialog = document.getElementById("dialog");
+
+      const photoWrap = document.getElementById("modalPhoto");
+      photoWrap.innerHTML = "";
+      photoWrap.appendChild(imgEl(p.foto, p.nombre, "modal-photo"));
+
+      document.getElementById("modalName").textContent = p.nombre;
+      document.getElementById("modalOrg").textContent = p.org || "";
+      document.getElementById("modalBio").textContent = p.bio || "";
+
+      const talksTitle = document.getElementById("modalTalksTitle");
+      const talksEl    = document.getElementById("modalTalks");
+      talksEl.innerHTML = "";
+
+      if (p.charlas.length) {
+        talksTitle.textContent = p.charlas.length === 1 ? "Charla" : "Charlas";
+        for (const t of p.charlas) {
+          const item = document.createElement("div");
+          item.className = "talk-item";
+
+          const title = document.createElement("p");
+          title.className = "talk-title";
+          title.textContent = t.titulo;
+          item.appendChild(title);
+
+          const meta = document.createElement("p");
+          meta.className = "talk-meta";
+          const restricted = t.restriccion && t.restriccion !== "general";
+          meta.innerHTML =
+            `${t.dia} · ${t.hora} · ${t.aula}` +
+            (restricted ? ` <span class="talk-restricted">${t.restriccion}</span>` : "");
+          item.appendChild(meta);
+
+          talksEl.appendChild(item);
+        }
+      } else {
+        talksTitle.textContent = "";
+        const none = document.createElement("p");
+        none.className = "no-talks";
+        none.textContent = "Sin charlas vinculadas";
+        talksEl.appendChild(none);
+      }
+
+      dialog.showModal();
+    }
+
+    // ── Theme ─────────────────────────────────────────────────────────────────
+
+    function applyTheme(t) {
+      document.documentElement.dataset.theme = t;
+      document.getElementById("themeBtn").textContent = t === "dark" ? "☀" : "🌙";
+    }
+
+    const savedTheme = localStorage.getItem("ciberwall26.theme.v1")
+      || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    applyTheme(savedTheme);
+
+    document.getElementById("themeBtn").addEventListener("click", () => {
+      const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+      localStorage.setItem("ciberwall26.theme.v1", next);
+      applyTheme(next);
+    });
+
+    // ── Init ──────────────────────────────────────────────────────────────────
+
+    const statusEl = document.getElementById("status");
+    const gridEl   = document.getElementById("grid");
+
+    loadData()
+      .then(data => {
+        allPonentes = data;
+        renderGrid(data);
+        updateCount(data.length, data.length);
+        statusEl.hidden = true;
+        gridEl.hidden = false;
+      })
+      .catch(err => {
+        statusEl.textContent = `Error al cargar datos: ${err.message}`;
+        console.error(err);
+      });
+
+    document.getElementById("search").addEventListener("input", e => applySearch(e.target.value));
+    document.getElementById("clearBtn").addEventListener("click", () => {
+      document.getElementById("search").value = "";
+      applySearch("");
+    });
+
+    document.getElementById("modalClose").addEventListener("click", () => document.getElementById("dialog").close());
+    document.getElementById("dialog").addEventListener("click", e => {
+      if (e.target === e.currentTarget) e.currentTarget.close();
+    });
+  </script>
+</body>
+</html>

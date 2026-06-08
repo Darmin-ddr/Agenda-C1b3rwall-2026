@@ -1,6 +1,7 @@
 """
-Comprueba si el programa de C1b3rwall 2026 ha sido actualizado,
-descarga el JSON de ponencias, lo convierte a ICS y lo embebe en index.html.
+Comprueba si el programa o los ponentes de C1b3rwall han sido actualizados,
+descarga los JSON, convierte ponencias a ICS (embebido en index.html)
+y regenera ponentes.json si hay cambios.
 """
 
 import re
@@ -8,13 +9,19 @@ import json
 import sys
 import base64
 import hashlib
+import unicodedata
 import urllib.request
 from pathlib import Path
 
-CONGRESO_URL = "https://c1b3rwall.policia.es/congreso"
-PONENCIAS_URL = "https://c1b3rwall.policia.es/content/congreso/2026/ponencias_json.json"
-LAST_UPDATE_FILE = Path(".last-program-update")
-HTML_FILE = Path("index.html")
+YEAR = "2026"
+BASE = "https://c1b3rwall.policia.es"
+CONGRESO_URL      = f"{BASE}/congreso"
+PONENCIAS_URL     = f"{BASE}/content/congreso/{YEAR}/ponencias_json.json"
+PONENTES_URL      = f"{BASE}/content/congreso/{YEAR}/ponentes_json.json"
+LAST_UPDATE_FILE  = Path(".last-program-update")
+LAST_PONENTES_HASH = Path(".last-ponentes-hash")
+HTML_FILE         = Path("index.html")
+PONENTES_FILE     = Path("ponentes.json")
 
 # Spain en junio = CEST (UTC+2)
 TZ_OFFSET = 2
@@ -149,6 +156,110 @@ def embed_ics(html, ics, timestamp):
     return new_html, n > 0
 
 
+def norm_name(s):
+    s = unicodedata.normalize("NFD", s.lower().strip())
+    s = re.sub(r"[̀-ͯ]", "", s)
+    return re.sub(r"\s+", "", s)
+
+
+def build_ponentes_json(ponentes_raw, sessions):
+    by_name = {norm_name(p["Nombre"]): p for p in ponentes_raw}
+
+    talks_by_name: dict = {}
+    for sesion in sessions:
+        for sp in sesion.get("Ponentes", []):
+            key = norm_name(sp.get("Nombre", ""))
+            talk = {
+                "titulo":     sesion.get("Título", ""),
+                "dia":        sesion.get("Día", ""),
+                "hora":       sesion.get("Hora", ""),
+                "aula":       sesion.get("Ubicación", ""),
+                "actividad":  sesion.get("Actividad", ""),
+                "restriccion": sesion.get("Restricción", ""),
+            }
+            talks_by_name.setdefault(key, []).append(talk)
+
+    result = []
+    seen: set = set()
+
+    for p in ponentes_raw:
+        key = norm_name(p["Nombre"])
+        seen.add(key)
+        foto = p.get("Foto", "")
+        result.append({
+            "id":      p["ID"],
+            "nombre":  p["Nombre"],
+            "foto":    BASE + foto if foto else "",
+            "bio":     p.get("Biografía", ""),
+            "org":     p.get("Organización", ""),
+            "charlas": talks_by_name.get(key, []),
+        })
+
+    extra_seen: set = set()
+    for sesion in sessions:
+        for sp in sesion.get("Ponentes", []):
+            key = norm_name(sp.get("Nombre", ""))
+            if key in seen or key in extra_seen:
+                continue
+            extra_seen.add(key)
+            foto = sp.get("Foto", "")
+            result.append({
+                "id":      sp.get("ID", ""),
+                "nombre":  sp.get("Nombre", ""),
+                "foto":    BASE + foto if foto else "",
+                "bio":     "",
+                "org":     "",
+                "charlas": talks_by_name.get(key, []),
+            })
+
+    result.sort(key=lambda x: norm_name(x["nombre"]))
+    return result
+
+
+def update_ponentes(sessions):
+    print("Comprobando ponentes...")
+    try:
+        raw = fetch(PONENTES_URL)
+    except Exception as e:
+        print(f"Error al obtener ponentes: {e}")
+        return False
+
+    new_hash = hashlib.sha1(raw.encode()).hexdigest()
+    old_hash = LAST_PONENTES_HASH.read_text(encoding="utf-8").strip() if LAST_PONENTES_HASH.exists() else ""
+
+    if new_hash == old_hash:
+        print("Ponentes sin cambios")
+        return False
+
+    print(f"Cambio en ponentes detectado (hash {old_hash[:8] or 'ninguno'} → {new_hash[:8]})")
+    ponentes_raw = json.loads(raw)
+    merged = build_ponentes_json(ponentes_raw, sessions)
+    matched = sum(1 for p in merged if p["charlas"])
+
+    merged_json = json.dumps(merged, ensure_ascii=False, separators=(",", ":"))
+    LAST_PONENTES_HASH.write_text(new_hash, encoding="utf-8")
+    print(f"Ponentes listos: {len(merged)} ponentes, {matched} con charlas vinculadas")
+    return merged_json
+
+
+def embed_ponentes(html, ponentes_json):
+    tag = f'<script id="embeddedPonentes" type="application/json">{ponentes_json}</script>'
+    new_html, n = re.subn(
+        r'<script\s+id="embeddedPonentes"[^>]*>.*?</script>',
+        lambda _: tag,
+        html,
+        flags=re.DOTALL,
+    )
+    if n == 0:
+        new_html = re.sub(
+            r'(<script\s+id="embeddedIcs"[^>]*>.*?</script>)',
+            lambda m: m.group(1) + "\n  " + tag,
+            html,
+            flags=re.DOTALL,
+        )
+    return new_html
+
+
 def main():
     print("Comprobando timestamp del programa...")
     try:
@@ -165,35 +276,41 @@ def main():
     print(f"Timestamp actual: {timestamp}")
     last = LAST_UPDATE_FILE.read_text(encoding="utf-8").strip() if LAST_UPDATE_FILE.exists() else ""
 
-    if timestamp == last:
-        print("Sin cambios, nada que hacer")
-        sys.exit(0)
-
-    print(f"Cambio detectado: '{last}' -> '{timestamp}'")
+    programa_changed = timestamp != last
 
     try:
-        raw = fetch(PONENCIAS_URL)
-        sessions = json.loads(raw)
+        raw_sessions = fetch(PONENCIAS_URL)
+        sessions = json.loads(raw_sessions)
     except Exception as e:
         print(f"Error al obtener ponencias: {e}")
         sys.exit(1)
 
-    print(f"Ponencias cargadas: {len(sessions)}")
+    ponentes_json = update_ponentes(sessions)
+    ponentes_changed = bool(ponentes_json)
 
-    ics = json_to_ics(sessions)
-    valid = ics.count("BEGIN:VEVENT")
-    print(f"Eventos ICS generados: {valid}")
+    if not programa_changed and not ponentes_changed:
+        print("Sin cambios en programa ni ponentes, nada que hacer")
+        sys.exit(0)
 
     html = HTML_FILE.read_text(encoding="utf-8")
-    new_html, ok = embed_ics(html, ics, timestamp)
 
-    if not ok:
-        print("Error: no se encontró el tag #embeddedIcs en index.html")
-        sys.exit(1)
+    if programa_changed:
+        print(f"Cambio de programa detectado: '{last}' -> '{timestamp}'")
+        print(f"Ponencias cargadas: {len(sessions)}")
+        ics = json_to_ics(sessions)
+        valid = ics.count("BEGIN:VEVENT")
+        print(f"Eventos ICS generados: {valid}")
+        html, ok = embed_ics(html, ics, timestamp)
+        if not ok:
+            print("Error: no se encontró el tag #embeddedIcs en index.html")
+            sys.exit(1)
+        LAST_UPDATE_FILE.write_text(timestamp, encoding="utf-8")
 
-    HTML_FILE.write_text(new_html, encoding="utf-8")
-    LAST_UPDATE_FILE.write_text(timestamp, encoding="utf-8")
-    print(f"index.html actualizado con {valid} eventos")
+    if ponentes_changed:
+        html = embed_ponentes(html, ponentes_json)
+
+    HTML_FILE.write_text(html, encoding="utf-8")
+    print("index.html actualizado")
 
 
 if __name__ == "__main__":
