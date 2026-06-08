@@ -5107,7 +5107,7 @@
       const title = charla.titulo.trim();
       const aula  = charla.aula.trim();
       return state.events.find(e =>
-        e.summary.trim() === title && e.location.trim() === aula
+        (e.title || "").trim() === title && (e.room || "").trim() === aula
       );
     }
 
