@@ -1254,6 +1254,10 @@
 
     .speaker-talk-item:hover { background: var(--panel-3, var(--surface)); }
 
+    .speaker-talk-item.selected { border-left: 4px solid var(--accent); }
+
+    .speaker-talk-item.conflict  { border-left: 4px solid var(--warn); }
+
 
 
     .speaker-talk-title { margin: 0 0 4px; font-size: .85rem; font-weight: 600; line-height: 1.3; }
@@ -5169,9 +5173,13 @@
 
         for (const t of charlas) {
 
+          const ev      = findEventByTalk(t);
+          const sel      = ev && state.selected.has(ev.uid);
+          const conflict = sel && findConflicts(ev).length > 0;
+
           const item = document.createElement("div");
 
-          item.className = "speaker-talk-item";
+          item.className = "speaker-talk-item" + (conflict ? " conflict" : sel ? " selected" : "");
 
           item.innerHTML =
 
@@ -5180,7 +5188,6 @@
             `<p class="speaker-talk-meta">${escapeHtml(t.dia)} · ${escapeHtml(t.hora)} · ${escapeHtml(t.aula)}</p>`;
 
           item.addEventListener("click", () => {
-            const ev = findEventByTalk(t);
             if (!ev) return;
             showDetail(ev.uid);
           });
