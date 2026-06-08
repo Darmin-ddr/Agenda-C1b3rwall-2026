@@ -2868,6 +2868,8 @@
 
       bindEvents();
 
+      loadPonentes();
+
       try {
 
         const source = await getInitialIcs();
@@ -2895,10 +2897,6 @@
         document.querySelector("#pickIcs").addEventListener("click", pickIcs);
 
       }
-
-
-
-      loadPonentes();
 
 
 
