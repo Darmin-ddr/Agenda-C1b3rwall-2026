@@ -1248,7 +1248,11 @@
 
       background: var(--panel-2); border: 1px solid var(--line); margin-bottom: 7px;
 
+      cursor: pointer; transition: background .15s;
+
     }
+
+    .speaker-talk-item:hover { background: var(--panel-3, var(--surface)); }
 
 
 
@@ -5101,6 +5105,14 @@
 
 
 
+    function findEventByTalk(charla) {
+      const title = charla.titulo.trim();
+      const aula  = charla.aula.trim();
+      return state.events.find(e =>
+        e.summary.trim() === title && e.location.trim() === aula
+      );
+    }
+
     function showSpeaker(id) {
 
       const p = [...state.ponentes.values()].find(x => x.id === id);
@@ -5168,6 +5180,13 @@
             `<p class="speaker-talk-title">${escapeHtml(t.titulo)}</p>` +
 
             `<p class="speaker-talk-meta">${escapeHtml(t.dia)} · ${escapeHtml(t.hora)} · ${escapeHtml(t.aula)}</p>`;
+
+          item.addEventListener("click", () => {
+            const ev = findEventByTalk(t);
+            if (!ev) return;
+            document.getElementById("speakerDialog").close();
+            showDetail(ev);
+          });
 
           talksEl.appendChild(item);
 
